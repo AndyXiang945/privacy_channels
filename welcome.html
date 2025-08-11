@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		body {
+			background-color:gray;
+			color: black;
+			text-align:center;
+			font-size:18px;
+			font-family: "Monaco";
+		}
+		/* form {
+			text-align:center;
+		} */
+		</style>
+	<meta charset="utf-8"/>
+	<script src="js/index.js"></script>
+	<link rel="stylesheet" href="html/style.css">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css" />
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<noscript> <div id="main-content"><h2>JavaScript is off. Please enable JavaScript in order to continue.</h2>
+		</div></noscript>
+	</head>
+	<body >
+		<!-- partial:index.partial.html -->
+		<div class="container" style="max-width: 1024px; background-color: white;">
+			<div class="container" style="max-width: 1024px; background-color: white;">
+				<div class="settings-tray">
+
+						<div class="text" style="text-align: center; background-color: #eee; padding: 0% 10%;">
+							<br>
+							<p style="font-size: large;">Thank you for participating in our study on the privacy transparency channel design for mobile apps in Google Play Store. 
+								We are researchers from xxx (removed to avoid anonymity breach). </p>
+							<p style="font-size: large;">You will need to use a Chrome browser on a PC or a Mac in order to complete this study. 
+								This website was not tested for Mobile Phones and other web browsers. 
+								You need to enable JavaScript on your browser to be able to complete the study.
+							</p>
+
+							<br>
+							<p style="font-size: large;">
+								** Please disable browser extensions to avoid malfunctions on page redirects. ** 
+							</p>
+
+							<br>
+							<p style="font-size: large;">
+								At the end of the study, 
+								we will provide you with a survey code that you should submit to the job request on Prolific for receiving your compensation within two weeks.</p>
+							<br>
+							<p style="font-size: large;">
+								We will compensate you with $8 USD if your answers were complete and relevant. 
+								And we will pay you $2 USD as an additional bonus if your answers are high quality. 
+								Payments are made via Prolific.
+							</p>
+							<br>
+
+							<p style="font-size: large;">Click "Next" for the Informed Consent to this study. 
+								<br>
+								
+							</p>
+						</div>
+				</div>
+
+			</div>
+
+
+
+		<button type="submit" name="submit_btn" onclick="next()" class="g-recaptcha mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Next
+		</button>
+
+		
+		<br>
+		<br>
+
+		</div>
+	</body>
+
+	<script>
+		function next(){
+			location.replace("../html/consent.html ")
+		}
+	</script>
+</html>
