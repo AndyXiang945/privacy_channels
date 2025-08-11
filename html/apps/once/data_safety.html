@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		body {
+			background-color:gray;
+			color: black;
+			text-align:center;
+			font-size:18px;
+		}
+        .container1 {
+            margin: auto;
+            background: #fff;
+            padding: 0;
+            border-radius: 7px;
+        }
+		* {
+            font-family:  Arial;
+        }
+
+		</style>
+	<meta charset="utf-8"/>
+	
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css" />
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<noscript> <div id="main-content"><h2>JavaScript is off. Please enable JavaScript in order to continue.</h2>
+		</div></noscript>
+    
+    <link rel="stylesheet" href="css/data_safety.css">
+    <script src="js/data_safety.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(window).on("scroll", function() {
+				if (localStorage.getItem("scroll_ds") == null){
+					localStorage.setItem("scroll_ds", $(window).scrollTop());
+				} else {
+					localStorage.setItem("scroll_ds", localStorage.getItem("scroll_ds") + ',' + $(window).scrollTop());
+				}
+				
+			});
+		});
+	</script>
+	</head>
+	<body >
+		<div class="container1" style="max-width: 1600px; background-color: white;">
+				<div class="settings-tray">
+						<div class="text" style="text-align: center; background-color: #eee; padding: 0% 10%;">
+							<br>
+								<h4><b>Data Safety Privacy Transparency Channel for the Once App</b></h4>
+								<h6> 
+									<b>Now you are presented with the <em>data safety privacy transparency channel</em> 
+									<script>
+										channelOrder = localStorage.getItem('channelOrder').split(',');
+										channelIndex = channelOrder.indexOf('data_safety');
+										if (channelIndex == 0){
+											document.write("(the first of the three channels)");
+										} else if (channelIndex == 1){									
+											document.write("(the second of the three channels)");
+										} else {
+											document.write("(the last of the three channels)");
+										}
+									</script>
+									for the <b>Once</b> mobile app. </b>
+									 <br>
+									Please closely follow the instructions for interacting with the channel (4 steps in total).
+								<br>
+									* The data safety information shown below is the same as the information provided on the Google Play Store for the Once mobile app.
+								<br>
+								<br>
+							</h6>
+							
+						</div>
+
+				</div>
+
+		<div class="flex-container" id="content_container" style="padding: 5px;">
+			<div class="smartphone" id="summary_content" >
+				
+				<div class="content"  style="padding: 1px;">
+					<div class="tooltip_right_arrow_left" style="position: relative; left: 170px; top: 120px">
+						<span class="tooltiptext" id="instruction1">Step 1/4: Read the data safety section on the app's main page.
+							<br>
+							<a onclick="next('instruction2')"><u>Next</u></a>
+						</span>
+					</div> 
+
+						<div class="title" style="text-align: left;"> Data Safety &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8594;</div>						
+						<div class="text" style="text-align: left;">
+							Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.
+						</div>
+					
+						<div class="container" id="highlights">
+
+							<div class="section icon-text">
+								<div class="icon"><img src="/img/dataSharing.svg" alt="Share icon"/></div>
+								<div>
+									<p style="margin: 0px; text-align: left;">No data shared with third parties</p>
+									<p style="font-size: 12px; margin: 0px; text-align: left;"></p>
+								</div>
+								
+								<br>
+							</div>
+					
+							<div class="section icon-text">
+								<div class="icon"><img src="/img/dataCollection.svg"/></div>
+					
+								<div>
+									<p style="margin: 0px; text-align: left;">This app may collect these data types</p>
+									<p style="font-size: 12px; margin: 0px; text-align: left;"> Location, Personal info and 6 others</p>
+								</div>
+					
+							</div>
+					
+							<div class="section icon-text">
+								<div class="icon"><img src="/img/dataSecurity.svg"/></div>
+								<div>Data is encrypted in transit</div>
+							</div>
+					
+							<div class="section icon-text">
+								<div class="icon"><img src="/img/dataDelete.svg"/></div>
+								<div>You can request that data be deleted</div>
+							</div>
+							
+							<a onclick="displayDetails()"><u>See details</u></a>
+							<div class="tooltip_right_arrow_left" style="position: relative; left: 140px; top: -30px">
+								
+								<span class="tooltiptext" id="instruction2" style="display: none;">
+									Step 2/4: Click on "See details" button to display the data safety page.
+									<br>
+									<a onclick="next('instruction3')"><u>Next</u></a>
+								</span>
+							</div> 
+
+						</div>
+					</div>                      
+			</div>
+			
+
+			
+			<div class="smartphone" id="detailed_contents" style="display: none;">
+
+
+				<div class="content"  style="overflow-x: hidden; overflow-y: auto; " >
+					<img id="photo" src="app_img/data_safety_page_header.png" style="width: 350px; ">
+
+					<br>
+					<br>
+					<br>
+
+					<div class="tooltip_right_arrow_left" style="position: absolute; left: 350px; top: 100px; z-index: 10;">
+						<span class="tooltiptext" id="instruction3" style="width: 200px; display: none;">
+							Step 3/4: Read the data safety page. 
+							<br>
+							Please note:
+							<br>
+							1. <b>Click on the &#8595; arrows </b> to expand the contents.
+							<br>
+							2. <b>Scroll down</b> to read all the sections.
+							<br>
+							3. <b>Click the red color checkboxes*</b> next to the section titles.
+							<br>
+							(*We added the checkboxes for you to indicate that you read the section.)
+							<br>
+							<a onclick="next('instruction4')"><u>Next</u></a>
+						</span>
+					</div> 
+
+					<div style="padding-left: 15px; text-align: left;">
+						<div class="title" style="text-align: left;">Data Safety</div>
+						<div class="text" style="text-align: left;">
+							Here's more information the developer has provided about the kinds of data this app may collect and share, and security practices the app may follow. Data practices may vary based on your app version, use, region, and age. 
+						</div>
+						<hr>
+						
+						<!-- Data shared -->
+						<div class="icon" style="text-align: left;"><img src="/img/dataSharing.svg"/>
+							<!-- <h4 style="margin: 0px; text-align: left;"> Data Shared</h4> -->
+		
+		
+							<label for="vehicle1" style="margin: 0px; text-align: left; font-size: 20px;"> No data shared with third parties</label>
+		
+							<input type="checkbox" id="checkbox_DataShared" value="1" style="width: 18px; height: 18px; outline: 2px solid #e90707ef;">
+							
+		
+							<P style="margin: 0px; text-align: left;">The developer says this app doesn't share user data with other companies or organizations. 
+								Learn more about how developers declare sharing.</P>
+							
+						<hr>
+					
+
+						<!-- Data collected -->
+						<div class="icon" style="text-align: left;"><img src="/img/dataCollection.svg" />
+							<!-- <h4 style="margin: 0px; text-align: left;">Data Collected</h4> -->
+							<label for="vehicle1" style="margin: 0px; text-align: left; font-size: 20px;">Data Collected</label>
+							<input type="checkbox" id="checkbox_DataCollected" value="1" style="width: 18px; height: 18px; outline: 2px solid #e90707ef;">
+	
+							<P style="margin: 0px; text-align: left;">Data this app may collect</P>
+
+							<div style="display: flex">
+								<div style="padding-top: 20px;">
+									<img src="/img/activity.svg" style="width: 24px; height: 24px; float:left"/>
+								</div>
+								
+								<div>
+									<button class="collapsible">App activity <br><span style="font-size: 10pt; color: gray;">
+										App interactions, <br>
+										In-app search history, <br>
+										Other user-generated content, <br>
+										and Other actions 
+									</span></button>
+									<div class="collas_content">
+										<div class="container" id="highlights">
+											<div class="section icon-text">
+												<div>
+													<p style="font-size: 16px">Data collected and for what purpose</p>
+													<p style="font-size: 14px; margin: 0px;"> <b>App interactions:</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														App functionality <br>
+														Analytics <br>
+														Fraud prevention <br>
+														Security <br>
+														Compliance <br>
+														Personalization
+													</p>
+
+													<p style="font-size: 14px; margin: 0px;"> <b>In-app search history:</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														App functionality <br>
+														Analytics <br>
+														Fraud prevention <br>
+														Security <br>
+														Compliance <br>
+														Personalization
+													</p>
+
+
+													<p style="font-size: 14px; margin: 0px;"> <b>Other user-generated content:</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														App functionality <br>
+														Analytics <br>
+														Fraud prevention <br>
+														Security <br>
+														Compliance <br>
+														Personalization
+													</p>
+
+													<p style="font-size: 14px; margin: 0px;"> <b>Other actions:</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														App functionality <br>
+														Analytics <br>
+														Fraud prevention <br>
+														Security <br>
+														Compliance <br>
+														Personalization
+													</p>
+												</div>
+												<br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+							<div style="display: flex">
+								<div style="padding-top: 20px;">
+									<img src="/img/audio.svg" style="width: 24px; height: 24px; float:left"/>
+								</div>
+								
+								<div>
+									<button class="collapsible">Photos and videos <br><span style="font-size: 10pt; color: gray;">Photos</span></button>
+									<div class="collas_content">
+										<div class="container" id="highlights">
+											<div class="section icon-text">
+												<div>
+													<p style="font-size: 16px">Data collected and for what purpose</p>
+													<p style="font-size: 14px; margin: 0px;"> <b>Photos:</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														App functionality <br>
+														Fraud prevention <br>
+														Security <br>
+														Compliance
+													</p>
+												</div>
+												<br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<div style="display: flex">
+								<div style="padding-top: 20px;">
+									<img src="/img/device.svg" style="width: 24px; height: 24px; float:left"/>
+								</div>
+								
+								<div>
+									<button class="collapsible">Device or other IDs <br><span style="font-size: 10pt; color: gray;">Device or other IDs</span></button>
+									<div class="collas_content">
+										<div class="container" id="highlights">
+											<div class="section icon-text">
+												<div>
+													<p style="font-size: 16px">Data collected and for what purpose</p>
+													<p style="font-size: 14px; margin: 0px;"> <b>Device or other IDs:</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														App functionality <br>
+														Analytics <br>
+														Fraud prevention <br>
+														Security <br>
+														Compliance <br>
+													</p>
+
+												</div>
+												<br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div style="display: flex">
+								<div style="padding-top: 20px;">
+									<img src="/img/identity.svg" style="width: 24px; height: 24px; float:left"/>
+								</div>
+								
+								<div>
+									<button class="collapsible">Personal info <br><span style="font-size: 10pt; color: gray;">
+										Name, Email address, <br>
+										Sexual orientation,<br>
+										and Other info
+									</span></button>
+									<div class="collas_content">
+										<div class="container" id="highlights">
+											<div class="section icon-text">
+												<div>
+													<p style="font-size: 16px">Data collected and for what purpose</p>
+													<p style="font-size: 14px; margin: 0px;"> <b>Name:</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														App functionality <br> 
+														Developer communication <br>
+														Fraud prevention <br>
+														Security <br>
+														Compliance
+													</p>
+
+													<p style="font-size: 14px; margin: 0px;"> <b>Email address:</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														App functionality <br> 
+														Developer communication <br>
+														Advertising or marketing <br>
+														Fraud prevention <br>
+														Security <br>
+														Compliance <br>
+														Account management 
+													
+													</p>
+
+													<p style="font-size: 14px; margin: 0px;"> <b>Sexual orientation:</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														App functionality <br>
+														Persinalization
+													</p>
+
+													<p style="font-size: 14px; margin: 0px;"> <b>Other info:</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														App functionality <br> 
+														Analytics <br> 
+														Fraud prevention <br>
+														Security <br>
+														Compliance <br>
+														Persinalization 
+													</p>
+
+												</div>
+												<br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div style="display: flex">
+								<div style="padding-top: 20px;">
+									<img src="/img/info.svg" style="width: 24px; height: 24px; float:left"/>
+								</div>
+								
+								<div>
+									<button class="collapsible">App info and performance <br><span style="font-size: 10pt; color: gray;">
+										Crash logs, Diagnostics <br>
+										and Other app performance data
+									</span></button>
+									<div class="collas_content">
+										<div class="container" id="highlights">
+											<div class="section icon-text">
+												<div>
+													<p style="font-size: 16px">Data collected and for what purpose</p>
+													<p style="font-size: 14px; margin: 0px;"> <b>Crash logs:</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														Analytics <br>
+														Fraud prevention <br>
+														Security <br>
+														Compliance
+													
+													</p>
+
+													<p style="font-size: 14px; margin: 0px;"> <b>Diagnostics:</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														Analytics <br>
+														Fraud prevention <br>
+														Security <br>
+														Compliance
+													</p>
+
+													<p style="font-size: 14px; margin: 0px;"> <b>Other app performance data:</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														Analytics <br>
+														Fraud prevention <br>
+														Security <br>
+														Compliance
+													</p>
+												</div>
+												<br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div style="display: flex">
+								<div style="padding-top: 20px;">
+									<img src="/img/financial.svg" style="width: 24px; height: 24px; float:left"/>
+								</div>
+								
+								<div>
+									<button class="collapsible">Financial info <br><span style="font-size: 10pt; color: gray;">Purchase history</span></button>
+									<div class="collas_content">
+										<div class="container" id="highlights">
+											<div class="section icon-text">
+												<div>
+													<p style="font-size: 16px">Data collected and for what purpose</p>
+
+													<p style="font-size: 14px; margin: 0px;"> <b>Purchase history:</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														App functionality <br>
+														Analytics <br>
+														Fraud prevention <br>
+														Security <br>
+														Compliance
+													</p>
+												</div>
+												<br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+							<div style="display: flex">
+								<div style="padding-top: 20px;">
+									<img src="/img/message.svg" style="width: 24px; height: 24px; float:left"/>
+								</div>
+								
+								<div>
+									<button class="collapsible">Messages <br><span style="font-size: 10pt; color: gray;">Other in-app messages</span></button>
+									<div class="collas_content">
+										<div class="container" id="highlights">
+											<div class="section icon-text">
+												<div>
+													<p style="font-size: 16px">Data collected and for what purpose</p>
+
+													<p style="font-size: 14px; margin: 0px;"> <b>Other in-app messages:</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														App functionality <br>
+														Analytics <br>
+														Fraud prevention <br>
+														Security <br>
+														Compliance
+													</p>
+												</div>
+												<br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+							<div style="display: flex">
+								<div style="padding-top: 20px;">
+									<img src="/img/location.svg" style="width: 24px; height: 24px; float:left"/>
+								</div>
+								
+								<div>
+									<button class="collapsible">Location <br><span style="font-size: 10pt; color: gray;">
+										Approximate location <br>
+										Precise location 
+									</span></button>
+									<div class="collas_content">
+										<div class="container" id="highlights">
+											<div class="section icon-text">
+												<div>
+													<p style="font-size: 16px">Data collected and for what purpose</p>
+													<p style="font-size: 14px; margin: 0px;"> <b>Approximate location (Optional):</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														App functionality <br>
+														Analytics <br>
+														Fraud prevention <br>
+														Security <br>
+														Compliance <br>
+														Personalization
+													</p>
+										
+													<p style="font-size: 14px; margin: 0px;"> <b>Precise location (Optional):</b></p>
+													<p style="font-size: 14px; margin: 0px;"> 
+														App functionality <br> 
+														Analytics <br>
+														Fraud prevention <br>
+														Security <br>
+														Compliance <br>
+														Persinalization <br>
+													</p>
+												</div>
+												<br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					
+						<hr>
+					
+						<div class="icon" style="text-align: left;"><img src="/img/dataSecurity.svg" alt="Share icon"/>
+							<!-- <h4 style="margin: 0px; text-align: left;">Security practices</h4> -->
+							<label for="vehicle1" style="margin: 0px; text-align: left; font-size: 20px;">Security Practices</label>
+							<input type="checkbox" id="checkbox_SecurityPractices" value="1" style="width: 18px; height: 18px; outline: 2px solid #e90707ef;">
+	
+							<p style="font-size: 14px; margin: 0px; text-align: left;" > <b>Data is encrypted in transit</b></p>
+							<p style="font-size: 12px; color: gray; margin: 0px; text-align: left;">Your data is transferred over a secure connection</p>
+				
+							<br>
+							<p style="font-size: 14px; margin: 0px; text-align: left;"> <b>You can request that data be deleted</b></p>
+							<p style="font-size: 12px; color: gray; margin: 0px; text-align: left;">The developer provides a way for you to request that your data be deleted</p>
+						</div>
+							
+						<hr>
+						<p style="font-size: 14px; color: gray;">For more information about collected and shared data, see the developer's 
+							privacy policy</p>
+						
+						<hr>
+
+						<div class="tooltip_right_arrow_left" style="position: absolute; left: 350px; top: 560px; z-index: 10;">
+							<span class="tooltiptext" id="instruction4" style="width: 170px; display: none;">
+								Step 4/4: 
+								<br>
+								After reading the data safety page, please click <a href="#SurveyContainer" onclick="gotoSurvey()">here</a> to answer the questions.
+							</span>
+						</div> 
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container" id="SurveyContainer" style="max-width: 1600px; background-color: white; display: none; font-size: 14pt;">
+		<hr>
+
+		<div style="max-width: 960px; text-align: left; padding-left: 400px; ">
+			<h4 style="text-align: center;">
+				Please answer the following questions (C.1-C.13) 
+				based on your interactions with the data safety privacy transparency channel for the Once mobile app.
+			</h4>
+			<h6 style="text-align: center;">
+				<script>
+					channelOrder = localStorage.getItem('channelOrder').split(',');
+					channelIndex = channelOrder.indexOf('data_safety');
+					 if (channelIndex == 1){
+						document.write("* Note that these 13 questions are identical to those you answered for the previous privacy transparency channel, except that they are for the <b><em>data safety privacy transparency channel</em></b>. <br><br>")
+					} else if (channelIndex == 2) {
+						document.write("* Note that these 13 questions are identical to those you answered for the previous privacy transparency channels, except that they are for the <b><em>data safety privacy transparency channel</em></b>. <br><br>")
+					} 
+				
+				</script> 
+
+				* Please DO NOT refresh or close the current page, or go back to the previous page until you have completed the whole study.
+				You will see the "Congratulations..." confirmation page at the end indicating your completion of the study.
+				You can scroll up to revisit the privacy transparency channel at anytime.</h6>
+			<br>
+			<br>
+
+			<p style="font-size: 14pt;"><b>C.1</b> In my previous experiences with installing mobile apps from the Google Play Store, 
+				I often reviewed the privacy practice information disclosed on the 
+				<b><em>data safety privacy transparency channel </em></b> before deciding to install a mobile app.</p>
+			<input type="radio" id="C1-Strongly-agree" value="1" name="C1">  Strongly agree
+			<br>
+			<input type="radio" id="C1-Somewhat-agree" value="2" name="C1">  Somewhat agree 
+			<br>
+			<input type="radio" id="C1-Neither-agree-nor-disagree" value="3" name="C1"> Neither agree nor disagree
+			<br>
+			<input type="radio" id="C1-Somewhat-disagree" value="4" name="C1"> Somewhat disagree
+			<br>
+			<input type="radio" id="C1-Strongly-disagree" value="5" name="C1"> Strongly disagree
+			<br>
+			<br>
+			<br>
+		
+			<p style="font-size: 14pt;"><b>C.2</b> Based on the privacy practices I learned purely from the <b><em>data safety privacy transparency channel</em></b>, 
+				my privacy-sensitive information could be collected, used, and potentially shared (with other parties) 
+				by the Once mobile app (if I install and use it).</p>
+			<input type="radio" id="C2-Strongly-agree" value="1" name="C2">  Strongly agree
+			<br>
+			<input type="radio" id="C2-Somewhat-agree" value="2" name="C2">  Somewhat agree 
+			<br>
+			<input type="radio" id="C2-Neither-agree-nor-disagree" value="3" name="C2"> Neither agree nor disagree
+			<br>
+			<input type="radio" id="C2-Somewhat-disagree" value="4" name="C2"> Somewhat disagree
+			<br>
+			<input type="radio" id="C2-Strongly-disagree" value="5" name="C2"> Strongly disagree
+			<br>
+			<br>
+			<br>
+
+			<p style="font-size: 14pt;"><b>C.3</b> Based on the privacy practices I learned purely from the <b><em>data safety privacy transparency channel</em></b>, 
+				the Once mobile app (if I install and use it) <b><em>may collect and use</em></b> the following types of privacy-sensitive information  
+				(Please select all that apply; if no option is applicable, please select “None of above”.):
+				</p>
+            <input type="checkbox" id="C3-Location" value="Location" name="C3">  Location
+            <br>
+            <input type="checkbox" id="C3-Personal" value="Personal info" name="C3"> Personal info (e.g., name, email address, etc.)
+            <br>
+            <input type="checkbox" id="C3-Financial"  value="Financial info" name="C3"> Financial info (e.g., purchase history, payment info, etc.)
+            <br>
+            <input type="checkbox" id="C3-Health" value="Health and fitness info" name="C3"> Health and fitness info
+            <br>
+            <input type="checkbox" id="C3-Messages" value="Messages" name="C3"> Messages (e.g., emails, SMS)
+            <br>
+            <input type="checkbox" id="C3-Photos" value="Photos and videos" name="C3"> Photos and videos
+            <br>
+            <input type="checkbox" id="C3-Audios" value="Audios" name="C3"> Audios
+            <br>
+            <input type="checkbox" id="C3-Files" value="Files" name="C3"> Files and docs stored on the device
+            <br>
+            <input type="checkbox" id="C3-Calendar" value="Calendar" name="C3"> Calendar events 
+            <br>
+            <input type="checkbox" id="C3-Contact" value="Contact list" name="C3"> Contact list
+            <br>
+            <input type="checkbox" id="C3-Activity" value="App activity" name="C3"> App activity (e.g., in-app search history and interaction, etc.)
+            <br>
+            <input type="checkbox" id="C3-Browsing" value="Web browsing history" name="C3"> Web browsing history
+            <br>
+            <input type="checkbox" id="C3-Performance" value="App info and performance" name="C3"> App info and performance (e.g., app crash log)
+            <br>
+            <input type="checkbox" id="C3-Identifiers" value="Device or other identifiers" name="C3"> Device or other identifiers (e.g., phone number, etc.)
+            <br>
+            <input type="checkbox" id="C3-Others" value="Others" name="C3"> Others:
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style = "width: 500px;">
+               <input class="mdl-textfield__input" type="text" id="C3-Specify-Others" name="C3">
+               <label class="mdl-textfield__label" for="C3-Specify-Others">please specify</label>
+           </div>
+            <br>
+            <input type="checkbox" id="C3-None" value="None" name="C3"> None of above
+           <br>
+           <br>
+           <br>
+
+		   <p style="font-size: 14pt;"><b>C.4</b> Based on the privacy practices I learned purely from the <b><em>data safety privacy transparency channel</em></b>, 
+			the Once mobile app (if I install and use it) <b><em>may share (with other parties)</em></b> the following types of privacy-sensitive information  
+			(Please select all that apply; if no option is applicable, please select “None of above”.):
+			</p>
+			<input type="checkbox" id="C4-Location" value="Location" name="C4">  Location
+			<br>
+			<input type="checkbox" id="C4-Personal" value="Personal info" name="C4"> Personal info (e.g., name, email address, etc.)
+			<br>
+			<input type="checkbox" id="C4-Financial"  value="Financial info" name="C4"> Financial info (e.g., purchase history, payment info, etc.)
+			<br>
+			<input type="checkbox" id="C4-Health" value="Health and fitness info" name="C4"> Health and fitness info
+			<br>
+			<input type="checkbox" id="C4-Messages" value="Messages" name="C4"> Messages (e.g., emails, SMS)
+			<br>
+			<input type="checkbox" id="C4-Photos" value="Photos and videos" name="C4"> Photos and videos
+			<br>
+			<input type="checkbox" id="C4-Audios" value="Audios" name="C4"> Audios
+			<br>
+			<input type="checkbox" id="C4-Files" value="Files" name="C4"> Files and docs stored on the device
+			<br>
+			<input type="checkbox" id="C4-Calendar" value="Calendar" name="C4"> Calendar events 
+			<br>
+			<input type="checkbox" id="C4-Contact" value="Contact list" name="C4"> Contact list
+			<br>
+			<input type="checkbox" id="C4-Activity" value="App activity" name="C4"> App activity (e.g., in-app search history and interaction, etc.)
+			<br>
+			<input type="checkbox" id="C4-Browsing" value="Web browsing history" name="C4"> Web browsing history
+			<br>
+			<input type="checkbox" id="C4-Performance" value="App info and performance" name="C4"> App info and performance (e.g., app crash log)
+			<br>
+			<input type="checkbox" id="C4-Identifiers" value="Device or other identifiers" name="C4"> Device or other identifiers (e.g., phone number, etc.)
+			<br>
+			<input type="checkbox" id="C4-Others" value="Others" name="C4"> Others:
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style = "width: 500px;">
+				<input class="mdl-textfield__input" type="text" id="C4-Specify-Others" name="C4">
+				<label class="mdl-textfield__label" for="C4-Specify-Others">please specify</label>
+			</div>
+			<br>
+			<input type="checkbox" id="C4-None" value="None" name="C4"> None of above
+			<br>
+			<br>
+			<br>
+
+			<p style="font-size: 14pt;"><b>C.5</b> Based on the privacy practices I learned purely from the <b><em>data safety privacy transparency channel</em></b>, 
+				the Once mobile app (if I install and use it) <b><em>may use</em></b> my privacy-sensitive information <b><em>for the following purposes</em></b>
+				(Please select all that apply; if no option is applicable, please select “None of above”.):
+			</p>
+				<input type="checkbox" id="C5-Advertising" value="Advertising or marketing" name="C5">  Advertising or marketing
+				<br>
+				<input type="checkbox" id="C5-Fraud" value="Fraud prevention and security" name="C5">  Fraud prevention and security 
+				<br>
+				<input type="checkbox" id="C5-Compliance" value="Regulation Compliance" name="C5">  Regulation compliance
+				<br>
+				<input type="checkbox" id="C5-Management" value="Account management" name="C5">  Account management
+				<br>
+				<input type="checkbox" id="C5-Functionality" value="App functionality" name="C5">  App functionality
+				<br>
+				<input type="checkbox" id="C5-Analytics" value="Data Analytics" name="C5">  Data analytics
+				<br>
+				<input type="checkbox" id="C5-Personalization" value="Personalization" name="C5">  Personalization
+				<br>
+				<input type="checkbox" id="C5-communications" value="Developer communications" name="C5">  Developer communications
+				<br>
+				<!-- <input type="checkbox" id="C5-testing" value="App testing and improvement" name="C5">  App testing and improvement
+				<br> -->
+				<input type="checkbox" id="C5-Others" value="Others" name="C5"> Others:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style = "width: 500px;">
+					<input class="mdl-textfield__input" type="text" id="C5-Specify-Others" name="C5">
+					<label class="mdl-textfield__label" for="C5-Specify-Others">please specify</label>
+				</div>
+				<br>
+				<input type="checkbox" id="C5-None" value="None" name="C5"> None of above
+			<br>
+			<br>
+			<br>
+
+
+			<p style="font-size: 14pt;"><b>C.6</b> Based on the privacy practices I learned purely from the <b><em>data safety privacy transparency channel</em></b>, 
+				the following statements about the <b><em>data rights that I have</em></b> regarding my privacy-sensitive information 
+				collected by the Once mobile app (if I install and use it) are true
+				(Please select all that apply; if no option is applicable, please select “None of above”.):
+			</p>
+				<input type="checkbox" id="C6-access" value="right_access" name="C6">  I can access any privacy-sensitive information collected by the app. 
+				<br>
+				<input type="checkbox" id="C6-correct" value="right_correct" name="C6">  I can correct any inaccurate privacy-sensitive information held by the app.
+				<br>
+				<input type="checkbox" id="C6-delete" value="right_delete" name="C6">  I can have my privacy-sensitive information deleted.
+				<br>
+				<input type="checkbox" id="C6-restrict" value="right_restrict" name="C6">  I can restrict the processing of my privacy-sensitive information.
+				<br>
+				<input type="checkbox" id="C6-portability" value="right_portability" name="C6">  I can request a copy of my privacy-sensitive information and have it transferred to another service provider.
+				<br>
+				<input type="checkbox" id="C6-object" value="right_object" name="C6">  I can object to the processing of my privacy-sensitive information.
+				<br>
+				<input type="checkbox" id="C6-intervention" value="right_intervention" name="C6">  I can request human intervention in the decision-making process that involves my privacy-sensitive information.
+				<br>
+				<input type="checkbox" id="C6-compliant" value="right_compliant" name="C6">  I can lodge my compliant to the supervising authority regarding any misuse of my privacy-sensitive information.
+				<br>
+				<input type="checkbox" id="C6-opt" value="right_opt" name="C6">  I can opt-out of the sale or sharing of my privacy-sensitive information.
+				<br>
+				<input type="checkbox" id="C6-Others" value="Others" name="C6"> Others:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style = "width: 500px;">
+					<input class="mdl-textfield__input" type="text" id="C6-Specify-Others" name="C6">
+					<label class="mdl-textfield__label" for="C6-Specify-Others">please specify</label>
+				</div>
+				<br>
+				<input type="checkbox" id="C6-None" value="None" name="C6"> None of above
+			<br>
+			<br>
+			<br>
+
+			<p style="font-size: 14pt;"><b>C.7</b> Based on the privacy practices I learned purely from the <b><em>data safety privacy transparency channel</em></b>, 
+				the following statements about the <b><em>storage or retention</em></b> of my privacy-sensitive information 
+				collected by the Once mobile app (if I install and use it) are true
+				(Please select all that apply; if no option is applicable, please select “None of above”.):
+			</p>
+				<input type="checkbox" id="C7-Location" value="Location" name="C7">  
+				The storage location (e.g., on my smartphone, on the app’s remote server, or on a third-party server) is provided to me.
+				<br>
+				<input type="checkbox" id="C7-Period" value="Period" name="C7">  
+				The storage or retention period (e.g., six months, two years, or forever) is provided to me.
+				<br>
+				<input type="checkbox" id="C7-Criterion" value="criterion" name="C7">  
+				The criterion for determining the storage or retention period is provided to me 
+				(e.g., my privacy-sensitive information will be stored until my request is addressed by a service representative). 
+				<br>
+				<input type="checkbox" id="C7-Post" value="Post" name="C7">  
+				The post-storage or retention period policy is provided to me (e.g., my privacy-sensitive information will be completely deleted, partially deleted, or anonymized after the retention period).
+				<br>
+
+				<input type="checkbox" id="C7-Others" value="Others" name="C7"> Others:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style = "width: 500px;">
+					<input class="mdl-textfield__input" type="text" id="C7-Specify-Others" name="C7">
+					<label class="mdl-textfield__label" for="C7-Specify-Others">please specify</label>
+				</div>
+				<br>
+				<input type="checkbox" id="C7-None" value="None" name="C7"> None of above
+			<br>
+			<br>
+			<br>
+
+			<p style="font-size: 14pt;"><b>C.8</b> 
+				Based on the privacy practices I learned purely from the <em>data safety</em> privacy transparency channel, 
+				the collection, use, and potentially sharing (with other parties) 
+				of my privacy-sensitive information by the Once mobile app (if I install and use it) <b><em>may harm me</em></b> 
+				by incurring some online risks such as restraining me from expressing my views (e.g., political views) 
+				free from worry, allowing attackers to steal my identity, and/or decreasing my chances of getting a good job in the future.
+			</p>
+			<input type="radio" id="C8-Strongly-agree" value="1" name="C8">  Strongly agree
+			<br>
+			<input type="radio" id="C8-Somewhat-agree" value="2" name="C8">  Somewhat agree 
+			<br>
+			<input type="radio" id="C8-Neither-agree-nor-disagree" value="3" name="C8"> Neither agree nor disagree
+			<br>
+			<input type="radio" id="C8-Somewhat-disagree" value="4" name="C8"> Somewhat disagree
+			<br>
+			<input type="radio" id="C8-Strongly-disagree" value="5" name="C8"> Strongly disagree
+			<br>
+			<br>
+			<br>
+
+			<p style="font-size: 14pt;"><b>C.9</b> Based on the privacy practices I learned purely from the <b><em>data safety privacy transparency channel</em></b>,
+				the collection, use, and potentially sharing (with other parties) 
+				of my privacy-sensitive information by the Once mobile app (if I install and use it) <b><em>may harm me</em></b> by 
+				incurring some physical risks (e.g., stalking and burglary) to me or my family.
+			</p>
+			<input type="radio" id="C9-Strongly-agree" value="1" name="C9">  Strongly agree
+			<br>
+			<input type="radio" id="C9-Somewhat-agree" value="2" name="C9">  Somewhat agree 
+			<br>
+			<input type="radio" id="C9-Neither-agree-nor-disagree" value="3" name="C9"> Neither agree nor disagree
+			<br>
+			<input type="radio" id="C9-Somewhat-disagree" value="4" name="C9"> Somewhat disagree
+			<br>
+			<input type="radio" id="C9-Strongly-disagree" value="5" name="C9"> Strongly disagree
+			<br>
+			<br>
+			<br>
+
+			<p style="font-size: 14pt;"><b>C.10</b> Based on the privacy practices I learned purely from the <b><em>data safety privacy transparency channel</em></b>,
+				the collection, use, and potentially sharing (with other parties) 
+				of my privacy-sensitive information by the Once mobile app (if I install and use it) <b><em>may benefit me</em></b> by 
+				by providing me with the customized service tailored to my preferences or needs. </p>
+			<input type="radio" id="C10-Strongly-agree" value="1" name="C10">  Strongly agree
+			<br>
+			<input type="radio" id="C10-Somewhat-agree" value="2" name="C10">  Somewhat agree 
+			<br>
+			<input type="radio" id="C10-Neither-agree-nor-disagree" value="3" name="C10"> Neither agree nor disagree
+			<br>
+			<input type="radio" id="C10-Somewhat-disagree" value="4" name="C10"> Somewhat disagree
+			<br>
+			<input type="radio" id="C10-Strongly-disagree" value="5" name="C10"> Strongly disagree
+			<br>
+			<br>
+			<br>
+
+			<p style="font-size: 14pt;"><b>C.11</b> Based on the privacy practices I learned purely from the <b><em>data safety privacy transparency channel</em></b>,
+				the collection, use, and potentially sharing (with other parties) 
+				of my privacy-sensitive information by the Once mobile app (if I install and use it) <b><em>may benefit me</em></b> by 
+				by providing me with the enhanced online security protection such as better fraud detection or prevention. </p>
+			<input type="radio" id="C11-Strongly-agree" value="1" name="C11">  Strongly agree
+			<br>
+			<input type="radio" id="C11-Somewhat-agree" value="2" name="C11">  Somewhat agree 
+			<br>
+			<input type="radio" id="C11-Neither-agree-nor-disagree" value="3" name="C11"> Neither agree nor disagree
+			<br>
+			<input type="radio" id="C11-Somewhat-disagree" value="4" name="C11"> Somewhat disagree
+			<br>
+			<input type="radio" id="C11-Strongly-disagree" value="5" name="C11"> Strongly disagree
+			<br>
+			<br>
+			<br>
+
+			<p style="font-size: 14pt;"><b>C.12</b> Based on the privacy practices I learned purely from the <b><em>data safety privacy transparency channel</em></b>,
+				I am concerned with the overall privacy risks associated with installing and using the Once mobile app. </p>
+			<input type="radio" id="C12-Strongly-agree" value="1" name="C12">  Strongly agree
+			<br>
+			<input type="radio" id="C12-Somewhat-agree" value="2" name="C12">  Somewhat agree 
+			<br>
+			<input type="radio" id="C12-Neither-agree-nor-disagree" value="3" name="C12"> Neither agree nor disagree
+			<br>
+			<input type="radio" id="C12-Somewhat-disagree" value="4" name="C12"> Somewhat disagree
+			<br>
+			<input type="radio" id="C12-Strongly-disagree" value="5" name="C12"> Strongly disagree
+			<br>
+			<br>
+			Please explain your answer to Question C.12 with at least 15 words and with high quality: 
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style = "width: 700px;">
+				<input class="mdl-textfield__input" type="text" id="C12-open-question" name="C12" onkeyup="wordCount('C12')">
+				<label class="mdl-textfield__label" for="C12-open-question">Enter text here</label>
+				<p id="C12-count" style="font-size: small;">Word Count: 0</p>
+			</div>
+			<br>
+			<br>
+			<br>
+
+			<p style="font-size: 14pt;"><b>C.13</b> The <b><em>data safety privacy transparency channel</b></em> 
+				should be improved in some ways to help me better understand the privacy practices of the Once mobile app 
+				and better estimate the privacy risks associated with installing and using the app.</p>
+			<input type="radio" id="C13-Strongly-agree" value="1" name="C13">  Strongly agree
+			<br>
+			<input type="radio" id="C13-Somewhat-agree" value="2" name="C13">  Somewhat agree 
+			<br>
+			<input type="radio" id="C13-Neither-agree-nor-disagree" value="3" name="C13"> Neither agree nor disagree
+			<br>
+			<input type="radio" id="C13-Somewhat-disagree" value="4" name="C13"> Somewhat disagree
+			<br>
+			<input type="radio" id="C13-Strongly-disagree" value="5" name="C13"> Strongly disagree
+			<br>
+			<br>
+			Please explain your answer to Question C.13 with at least 15 words and with high quality: 
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style = "width: 700px;">
+				<input class="mdl-textfield__input" type="text" id="C13-open-question" name="C13" onkeyup="wordCount('C13')">
+				<label class="mdl-textfield__label" for="C13-open-question">Enter text here</label>
+				<p id="C13-count" style="font-size: small;">Word Count: 0</p>
+			</div>
+			<br>
+			<br>
+			<br>
+
+
+		</div>
+
+		<hr style="width:90%; margin: auto;" />
+		<h5 style="text-align: center;">
+		<script>
+				channelOrder = localStorage.getItem('channelOrder').split(',');
+				channelIndex = channelOrder.indexOf('data_safety');
+				if  (channelIndex == 0){
+					document.write("In the next step, you will be presented with the second privacy transparency channel to further learn about the app's privacy practices.")
+				} else if (channelIndex == 1){
+					document.write("In the next step, you will be presented with the last privacy transparency channel to further learn about the app's privacy practices.")
+				} else {
+					document.write("You now finished interacting with all three privacy transparency channels. <br> In the next step, you will answer a set of questions about your overall opinions about the three channels.")
+				} 
+		</script>
+		</h5>
+
+		<div style="padding-bottom: 25px; text-align: center;">
+			<button onclick="submit()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Next</button>
+		</div>
+	</div>
+
+	</div>
+
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+		
+		for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+			content.style.maxHeight = null;
+			} else {
+			content.style.maxHeight = content.scrollHeight + "px";
+			} 
+		});
+
+
+		// var slider = document.getElementById("myRange");
+		// var output = document.getElementById("demo");
+	
+		
+		// output.innerHTML = 'N/A';
+		
+
+		// slider.oninput = function() {
+		// 	if (this.value == 1){
+		// 		output.innerHTML = 'Extremely Concerned';
+		// 	}
+		// 	else if (this.value == 2){
+		// 		output.innerHTML = 'Moderately Concerned';
+		// 	}
+		// 	else if (this.value == 3){
+		// 		output.innerHTML = 'Somewhat Concerned';
+		// 	}
+		// 	else if (this.value == 4){
+		// 		output.innerHTML = 'Slightly Concerned';
+		// 	}
+		// 	else if (this.value == 5){
+		// 		output.innerHTML = 'Not At All Concerned';
+		// 	}
+		// }  
+    }
+	</script>
+
+	</body>
+</html>

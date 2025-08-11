@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body {
+			background-color: gray;
+			color: black;
+			text-align: center;
+			font-size: 18px;
+		}
+
+		.container1 {
+			margin: auto;
+			background: #fff;
+			padding: 0;
+			border-radius: 7px;
+		}
+
+		* {
+			font-family: Arial;
+		}
+	</style>
+	<meta charset="utf-8" />
+
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css" />
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<noscript>
+		<div id="main-content">
+			<h2>JavaScript is off. Please enable JavaScript in order to continue.</h2>
+		</div>
+	</noscript>
+
+	<link rel="stylesheet" href="css/privacy_policy.css">
+	<script src="js/privacy_policy.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(window).on("scroll", function() {
+				if (localStorage.getItem("scroll_pp") == null){
+					localStorage.setItem("scroll_pp", $(window).scrollTop());
+				} else {
+					localStorage.setItem("scroll_pp", localStorage.getItem("scroll_pp") + ',' + $(window).scrollTop());
+				}
+				
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="container1" style="max-width: 1600px; background-color: white;">
+		<div class="settings-tray">
+			<div class="text" style="text-align: center; background-color: #eee; padding: 0% 10%;">
+				<br>
+				<h4><b>Privacy Policy Transparency Channel for the Once App</b></h4>
+				<h6>
+					<b>Now you are presented with the <em>privacy policy transparency channel</em>
+						<script>
+							channelOrder = localStorage.getItem('channelOrder').split(',');
+							channelIndex = channelOrder.indexOf('privacy_policy');
+							if (channelIndex == 0) {
+								document.write("(the first of the three channels)");
+							} else if (channelIndex == 1) {
+								document.write("(the second of the three channels)");
+							} else {
+								document.write("(the last of the three channels)");
+							}
+						</script>
+						for the <b>Once</b> mobile app.
+					</b>
+					<br>
+					Please closely follow the instructions for interacting with the channel (2 steps in total).
+					<br>
+					* The privacy policy shown below is extracted from the privacy policy provided on the Google Play Store for the Once mobile app.
+					<br>
+					<br>
+				</h6>
+			</div>
+		</div>
+
+		<div class="tooltip_right_arrow_left" style="position: relative; left: 350px; top: 60px">
+			<span class="tooltiptext" id="instruction1" style="width: 220px;">
+				Step 1/2: Read the privacy policy.
+				<br>
+				Please note:
+				<br>
+				1. <b>Scroll down</b> for more contents.
+				<br>
+				2. <b>Click on the red color checkboxes*</b> next to the section titles.
+				<br>
+				(*We added the checkboxes for you to indicate that you read the sections.)
+				<br>
+				<a onclick="next('instruction2')"><u>Next</u></a>
+			</span>
+
+		</div>
+
+		<div class="tooltip_right_arrow_left" style="position: relative; left: 350px; top: 600px">
+			<span class="tooltiptext" id="instruction2" style="width: 220px; display: none;">
+				Step 2/2: After reading the privacy policy, please click <a href="#SurveyContainer"
+					onclick="gotoSurvey()">here</a> to answer the questions.
+			</span>
+
+		</div>
+
+		<div id="privacy_policy_anno" style="width: 700px; height: 80vh; margin: auto; overflow-x: hidden; padding:5px; 
+			overflow-y: auto; border:1px solid black; ">
+			<h3>Once Privacy Policy</h3>
+
+			<div style="text-align: left; overflow-x: hidden; overflow-y: auto; padding: 15px;">
+				<h4>What personal data do we collect from the people that visit our website
+					or App? <input type="checkbox" id="section1" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4>
+				<p>We collect information from you when you register for our Service, fill
+					out a form or enter information on our Service.</p>
+				<p>Providing your name and email address is a prerequisite for concluding
+					the contract; otherwise, we will not be able to provide you with access
+					to the Service.</p>
+				<p>When using or registering on our Services, as appropriate, we may collect
+					the following personal data about you from you:</p>
+				<ul>
+					<li>data about you when you register an account, create or change your
+						profile, set preferences, register or make purchases through the
+						Services. This personal data could include the following: name,
+						profile picture, location, date of birth, gender, partner
+						preferences, interests, education, relationship, height, body type,
+						eyes color, hair color, photos, videos, data on gifts, and other
+						information to your profile information, your contact and
+						transaction data, your preferences when you select settings in the
+						Services.</li>
+					<li>content that you post, send, receive and share. This content
+						includes any information about you that you may choose to include:
+						photos, videos, user-to-user communications, chats, or feedback you
+						provide, or when you participate in any interactive features,
+						surveys, contests, or promotions.</li>
+				</ul>
+				<p>When you contact us:</p>
+				<ul>
+					<li>data about you when you provide through our support channels:
+						information regarding a problem you are experiencing with a Service
+						and any other documentation, screenshots, or information that would
+						be helpful in resolving the issue.</li>
+				</ul>
+				<p>When you make payments</p>
+				<ul>
+					<li>transaction data: such as payment card details, coins, method of
+						coins replenishment, transaction date, transaction ID, provider
+						payment ID, transaction status, and other information.</li>
+				</ul>
+				<p>We collect personal data automatically when you use our services or
+					register for an account with us:</p>
+				<ul>
+					<li>data about your visit and your interaction with our services. This
+						information includes the features you use; how you interact with
+						other members, notification status, registration date, credits
+						bought, date of last payment, use of services, and others
+						information.</li>
+				</ul>
+				<p>We collect data about the devices you use to access the Services.</p>
+				<ul>
+					<li>This device information includes your connection type and settings
+						when you install, access, update, or use our Services. We also
+						collect information through your device about your operating system,
+						browser type, IP address, URLs of referring/exit pages, device
+						identifiers, device model, manufacturer, User agent, platform, User
+						ID, timestamp, application version, in-app events, Login source,
+						application use, if profile is linked to Apple/Google, crash data,
+						and others information. We use your IP address and/or country
+						preference in order your location. How much of this information we
+						collect depends on the type and settings of the device you use to
+						access the Services.</li>
+				</ul>
+				<p>We use cookies and other tracking technologies (e.g., device identifiers
+					and pixels) to provide functionality and to recognize you. For more
+					information, please see your Cookies Policy, which includes information
+					on how to control or opt out of these cookies and tracking
+					technologies.</p>
+				<p>We may receive information about you from</p>
+				<ul>
+					<li>Service providers. This includes financial services vendors (provide
+						data for contesting transactions), third-party communication
+						applications (provide your public profile data in their apps), and
+						third-party social network or login services (such as Google or
+						Apple, which provide us your name, photo, and email address).</li>
+					<li>Other members. When they provide us with information about you, in
+						connection with claims or disputes. </li>
+				</ul>
+				<h4>How do we use your personal data? <input type="checkbox" id="section2" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4>
+				<p>We may use the information in the following ways:</p>
+				<ul>
+					<li>To present to use our App or Service.</li>
+					<li>To verify, moderate, and control and confirmation your accounts and
+						your activities on the Website or App.</li>
+					<li>To provide customer support, contact you regarding your account,
+						resolve any dispute and respond to your questions and
+						inquiries.</li>
+					<li>To address technical issues, improve existing and develop new
+						product features.</li>
+					<li>To promote our Website, App, or Service.</li>
+					<li>To personalize user experience and to allow us to deliver the type
+						of content and product offerings in which you are most
+						interested.</li>
+					<li>To address security issues;</li>
+					<li>To quickly process your payments and chargebacks.</li>
+				</ul>
+				<p>If you want to become a Popular Member then we will go through the
+					qualification process and prove your identity. If you give your consent,
+					we will use your data in promotional materials.</p>
+				<h4>Automated decision-making <input type="checkbox" id="section3" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4>
+				<p>We use personal data to make automated decisions relating to your use of
+					our Services:</p>
+				<ul>
+					<li>recommending members for communication and topics of communication,
+						based on the members with whom they communicate and the topics of
+						communication with them;</li>
+					<li>blocking or limitations of features members when detection of
+						prohibited and restricted content or violations of our Terms of
+						Service Agreement;</li>
+					<li>chargeback fraud alert and prevention, based on the information
+						about conflicting location and engagement in fraud;</li>
+					<li>profiling for remarketing and routing in <b>Getonce.com</b> of the
+						members, based on your activity on our Service. </li>
+				</ul>
+				<p>If you disagree with the decision, you can obtain human intervention,
+					express your point of view, and contest the decision.</p>
+
+				<h4>What are the grounds for the processing of your personal data? <input type="checkbox" id="section9" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4></h4>
+				<p>Our legal basis for collecting and using your personal data, as described
+					in this Privacy Policy, depends on the information we collect and the
+					specific context in which we collect it. We may process your personal
+					data for</p>
+				<ul>
+					<li>We need to perform a contract with you.</li>
+					<li>You have given us your consent.</li>
+					<li>The processing is in our legitimate interests.</li>
+					<li>We have a legal obligation.</li>
+				</ul>
+				<h4>When and how do we share personal data with others? <input type="checkbox" id="section4" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4>
+				<p>We do not sell your personal data. If we are involved in a merger,
+					acquisition or asset sale, your personal data may be transferred. We may
+					share your personal data that we collect:</p>
+				<ul>
+					<li>Affiliate;</li>
+					<li>within our family of companies and Business Incubator;</li>
+					<li>Systems and IT/IS solutions providers;</li>
+					<li>Hosting providers;</li>
+					<li>Payment processors;</li>
+					<li>Fraud prevention partners;</li>
+					<li>Marketing partners;</li>
+					<li>Lawyer.</li>
+				</ul>
+				<p>By registering on our website you will provide and share your personal
+					data with the public and with other members. 
+				</p>
+				<p>Under certain circumstances, we may be required to disclose your personal
+					data if required to do so by law or in response to valid requests by
+					public authorities (e.g. a court or a government agency), or it is
+					necessary to detect, prevent and address fraud and other illegal
+					activity, to protect ourselves, you and others, including as part of
+					investigations.</p>
+				<p>Your information, including personal data, may be transferred to a
+					country or other governmental jurisdiction where the data protection
+					laws may differ from those in your jurisdiction.</p>
+				<p>We will take all steps reasonably necessary to ensure that your data is
+					treated securely and in accordance with this Privacy Policy, and no
+					transfer of your personal data will take place to an organization or a
+					country unless there are adequate controls in place including the
+					security of your data and other personal data. When personal data is to
+					be transferred to a country that has not been designated by the European
+					Commission as providing an adequate level of protection for personal
+					data, we will ensure an adequate level of protection by any of the
+					recognized methods, including but not limited to entry into the standard
+					contractual clauses for the transfer of personal data to processors
+					established in third countries. These clauses have been approved by the
+					European Commission and will be updated when the new draft model clauses
+					are approved.</p>
+				<h4>Retention of Your Personal Data <input type="checkbox" id="section5" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4>
+				<p>We will retain your personal data for the duration of the customer’s
+					relationship or longer when we have a reason to believe that we may need
+					it to address future legal disputes or claims. We will retain and use
+					your information to the extent necessary to comply with our legal
+					obligations (for example, if we are required to retain your data to
+					comply with applicable laws), resolve disputes, and enforce our legal
+					agreements and policies.</p>
+				<h4>Deletion of Your Account and Personal Data <input type="checkbox" id="section6" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4>
+				<p>You have the right to delete your Account whenever you wish. 
+				<p>You may also send a request to our Support Team and they will help you
+					within the process.</p>
+				<p>If you would like to delete your Personal data we have collected during
+					your use of the Application, please submit a request to our Support
+					Team. Please note that processing your request may take some time.Please
+					note that deleting your Personal data will only impact the data stored
+					in our database for future activities and management of future
+					communications. These deletions do not alter or delete any emails or
+					personal data that the Application may have already forwarded to other
+					users, credit card issuing companies, or any other third parties, as
+					stated above in this Privacy Policy.</p>
+				<h4>Your Rights as a Data Subject <input type="checkbox" id="section7" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4>
+				<p>Under data protection law, you have the following rights:</p>
+				<ul>
+					<li>The right to access, update, or delete (subject to exceptions when
+						we are legally obliged to keep hold of your data such as to comply
+						with financial or other regulations and when keeping your data is
+						necessary for establishing, exercising or defending legal claims)
+						the personal data we have on you;</li>
+					<li>The right to rectification;</li>
+					<li>The right to object;</li>
+					<li>The right to restriction of processing;</li>
+					<li>The right to data portability;</li>
+					<li>The right to withdraw consent, but that shall not affect the
+						lawfulness of data processing based on the consent that has been
+						carried out prior to the withdrawal;</li>
+					<li>The right not to be subject to a decision based solely on automated
+						processing which produces legal effects (except when it is necessary
+						for the performance of the contract or when you have agreed to
+						it).</li>
+				</ul>
+				<p>Please note that we may ask you to verify your identity before responding
+					to such requests.</p>
+				<p>You are not to pay any charge for exercising your rights; but if your
+					requests are unfounded or excessive, we can charge a reasonable fee or
+					refuse to execute the request. We have one month to respond to you. In
+					addition, you have a right to lodge a complaint with the appropriate
+					data protection authority if you have concerns about how we process your
+					personal data.</p>
+				<h4>Your Rights to Object to Marketing <input type="checkbox" id="section8" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4>
+				<p>You shall have the right to object at any time to the processing of
+					personal data for direct marketing purposes.</p>
+				<p>Getonce SMS/ E-mail Notifier Policy</p>
+				<p>When you opt-in to the service, we will send you an SMS message or E-mail
+					to confirm your registration. This service is used to send you
+					notifications about updates, alerts, information, promotions, specials,
+					and other marketing offers.</p>
+				<p>You can cancel the SMS or E-mail service at any time. </p>
+			</div>
+		</div>
+
+
+
+
+		<div class="container" id="SurveyContainer" style="max-width: 1600px; background-color: white; display: none;">
+			<hr>
+
+			<div style="max-width: 960px; text-align: left; padding-left: 400px; font-size: 14pt;">
+				<h4 style="text-align: center;">
+					Please answer the following questions (C.1-C.13)
+					based on your interactions with the privacy policy transparency channel for the Once mobile app.
+				</h4>
+				<h6 style="text-align: center;">
+					<script>
+						channelOrder = localStorage.getItem('channelOrder').split(',');
+						channelIndex = channelOrder.indexOf('privacy_policy');
+						if (channelIndex == 1) {
+							document.write("* Note that these 13 questions are identical to those you answered for the previous privacy transparency channel, except that they are for the <b><em>privacy policy transparency channel</em></b>. <br><br>")
+						} else if (channelIndex == 2) {
+							document.write("* Note that these 13 questions are identical to those you answered for the previous privacy transparency channels, except that they are for the <b><em>privacy policy transparency channel</em></b>. <br><br>")
+						} 
+					</script>
+					* Please DO NOT refresh or close the current page, or go back to the previous page until you have
+					completed the whole study.
+					You will see the "Congratulations..." confirmation page at the end indicating your completion of the
+					study.
+					You can scroll up to revisit the privacy transparency channel at anytime.
+				</h6>
+				<br>
+				<br>
+
+
+				<p style="font-size: 14pt;"><b>C.1</b> In my previous experiences with installing mobile apps from the
+					Google Play Store,
+					I often reviewed the privacy practice information disclosed on the
+					<b><em>privacy policy transparency channel</em></b> before deciding to install a mobile app.
+				</p>
+				<input type="radio" id="C1-Strongly-agree" value="1" name="C1"> Strongly agree
+				<br>
+				<input type="radio" id="C1-Somewhat-agree" value="2" name="C1"> Somewhat agree
+				<br>
+				<input type="radio" id="C1-Neither-agree-nor-disagree" value="3" name="C1"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C1-Somewhat-disagree" value="4" name="C1"> Somewhat disagree
+				<br>
+				<input type="radio" id="C1-Strongly-disagree" value="5" name="C1"> Strongly disagree
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.2</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					my privacy-sensitive information could be collected, used, and potentially shared (with other
+					parties)
+					by the Once mobile app (if I install and use it).
+				</p>
+				<input type="radio" id="C2-Strongly-agree" value="1" name="C2"> Strongly agree
+				<br>
+				<input type="radio" id="C2-Somewhat-agree" value="2" name="C2"> Somewhat agree
+				<br>
+				<input type="radio" id="C2-Neither-agree-nor-disagree" value="3" name="C2"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C2-Somewhat-disagree" value="4" name="C2"> Somewhat disagree
+				<br>
+				<input type="radio" id="C2-Strongly-disagree" value="5" name="C2"> Strongly disagree
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.3</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the Once mobile app (if I install and use it) <b><em> may collect and use</em></b> the following
+					types of privacy-sensitive information
+					(Please select all that apply; if no option is applicable, please select “None of above”.):
+				</p>
+				<input type="checkbox" id="C3-Location" value="Location" name="C3"> Location
+				<br>
+				<input type="checkbox" id="C3-Personal" value="Personal info" name="C3"> Personal info (e.g., name,
+				email address, etc.)
+				<br>
+				<input type="checkbox" id="C3-Financial" value="Financial info" name="C3"> Financial info (e.g.,
+				purchase history, payment info, etc.)
+				<br>
+				<input type="checkbox" id="C3-Health" value="Health and fitness info" name="C3"> Health and fitness info
+				<br>
+				<input type="checkbox" id="C3-Messages" value="Messages" name="C3"> Messages (e.g., emails, SMS)
+				<br>
+				<input type="checkbox" id="C3-Photos" value="Photos and videos" name="C3"> Photos and videos
+				<br>
+				<input type="checkbox" id="C3-Audios" value="Audios" name="C3"> Audios
+				<br>
+				<input type="checkbox" id="C3-Files" value="Files" name="C3"> Files and docs stored on the device
+				<br>
+				<input type="checkbox" id="C3-Calendar" value="Calendar" name="C3"> Calendar events
+				<br>
+				<input type="checkbox" id="C3-Contact" value="Contact list" name="C3"> Contact list
+				<br>
+				<input type="checkbox" id="C3-Activity" value="App activity" name="C3"> App activity (e.g., in-app
+				search history and interaction, etc.)
+				<br>
+				<input type="checkbox" id="C3-Browsing" value="Web browsing history" name="C3"> Web browsing history
+				<br>
+				<input type="checkbox" id="C3-Performance" value="App info and performance" name="C3"> App info and
+				performance (e.g., app crash log)
+				<br>
+				<input type="checkbox" id="C3-Identifiers" value="Device or other identifiers" name="C3"> Device or
+				other identifiers (e.g., phone number, etc.)
+				<br>
+				<input type="checkbox" id="C3-Others" value="Others" name="C3"> Others:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px;">
+					<input class="mdl-textfield__input" type="text" id="C3-Specify-Others" name="C3">
+					<label class="mdl-textfield__label" for="C3-Specify-Others">please specify</label>
+				</div>
+				<br>
+				<input type="checkbox" id="C3-None" value="None" name="C3"> None of above
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.4</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the Once mobile app (if I install and use it) <b><em>may share (with other parties)</em></b> the
+					following types of privacy-sensitive information
+					(Please select all that apply; if no option is applicable, please select “None of above”.):
+				</p>
+				<input type="checkbox" id="C4-Location" value="Location" name="C4"> Location
+				<br>
+				<input type="checkbox" id="C4-Personal" value="Personal info" name="C4"> Personal info (e.g., name,
+				email address, etc.)
+				<br>
+				<input type="checkbox" id="C4-Financial" value="Financial info" name="C4"> Financial info (e.g.,
+				purchase history, payment info, etc.)
+				<br>
+				<input type="checkbox" id="C4-Health" value="Health and fitness info" name="C4"> Health and fitness info
+				<br>
+				<input type="checkbox" id="C4-Messages" value="Messages" name="C4"> Messages (e.g., emails, SMS)
+				<br>
+				<input type="checkbox" id="C4-Photos" value="Photos and videos" name="C4"> Photos and videos
+				<br>
+				<input type="checkbox" id="C4-Audios" value="Audios" name="C4"> Audios
+				<br>
+				<input type="checkbox" id="C4-Files" value="Files" name="C4"> Files and docs stored on the device
+				<br>
+				<input type="checkbox" id="C4-Calendar" value="Calendar" name="C4"> Calendar events
+				<br>
+				<input type="checkbox" id="C4-Contact" value="Contact list" name="C4"> Contact list
+				<br>
+				<input type="checkbox" id="C4-Activity" value="App activity" name="C4"> App activity (e.g., in-app
+				search history and interaction, etc.)
+				<br>
+				<input type="checkbox" id="C4-Browsing" value="Web browsing history" name="C4"> Web browsing history
+				<br>
+				<input type="checkbox" id="C4-Performance" value="App info and performance" name="C4"> App info and
+				performance (e.g., app crash log)
+				<br>
+				<input type="checkbox" id="C4-Identifiers" value="Device or other identifiers" name="C4"> Device or
+				other identifiers (e.g., phone number, etc.)
+				<br>
+				<input type="checkbox" id="C4-Others" value="Others" name="C4"> Others:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px;">
+					<input class="mdl-textfield__input" type="text" id="C4-Specify-Others" name="C4">
+					<label class="mdl-textfield__label" for="C4-Specify-Others">please specify</label>
+				</div>
+				<br>
+				<input type="checkbox" id="C4-None" value="None" name="C4"> None of above
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.5</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the Once mobile app (if I install and use it) <b><em>may use</em></b> my privacy-sensitive
+					information <b><em>for the following purposes</em></b>
+					(Please select all that apply; if no option is applicable, please select “None of above”.):
+				</p>
+				<input type="checkbox" id="C5-Advertising" value="Advertising or marketing" name="C5"> Advertising or
+				marketing
+				<br>
+				<input type="checkbox" id="C5-Fraud" value="Fraud prevention and security" name="C5"> Fraud prevention
+				and security
+				<br>
+				<input type="checkbox" id="C5-Compliance" value="Regulation Compliance" name="C5"> Regulation compliance
+				<br>
+				<input type="checkbox" id="C5-Management" value="Account management" name="C5"> Account management
+				<br>
+				<input type="checkbox" id="C5-Functionality" value="App functionality" name="C5"> App functionality
+				<br>
+				<input type="checkbox" id="C5-Analytics" value="Data Analytics" name="C5"> Data analytics
+				<br>
+				<input type="checkbox" id="C5-Personalization" value="Personalization" name="C5"> Personalization
+				<br>
+				<input type="checkbox" id="C5-communications" value="Developer communications" name="C5"> Developer
+				communications
+				<br>
+				<!-- <input type="checkbox" id="C5-testing" value="App testing and improvement" name="C5">  App testing and improvement
+					<br> -->
+				<input type="checkbox" id="C5-Others" value="Others" name="C5"> Others:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px;">
+					<input class="mdl-textfield__input" type="text" id="C5-Specify-Others" name="C5">
+					<label class="mdl-textfield__label" for="C5-Specify-Others">please specify</label>
+				</div>
+				<br>
+				<input type="checkbox" id="C5-None" value="None" name="C5"> None of above
+				<br>
+				<br>
+				<br>
+
+
+				<p style="font-size: 14pt;"><b>C.6</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the following statements about the <b><em>data rights that I have</em></b> regarding my
+					privacy-sensitive information
+					collected by the Once mobile app (if I install and use it) are true
+					(Please select all that apply; if no option is applicable, please select “None of above”.):
+				</p>
+				<input type="checkbox" id="C6-access" value="right_access" name="C6"> I can access any privacy-sensitive
+				information collected by the app.
+				<br>
+				<input type="checkbox" id="C6-correct" value="right_correct" name="C6"> I can correct any inaccurate
+				privacy-sensitive information held by the app.
+				<br>
+				<input type="checkbox" id="C6-delete" value="right_delete" name="C6"> I can have my privacy-sensitive
+				information deleted.
+				<br>
+				<input type="checkbox" id="C6-restrict" value="right_restrict" name="C6"> I can restrict the processing
+				of my privacy-sensitive information.
+				<br>
+				<input type="checkbox" id="C6-portability" value="right_portability" name="C6"> I can request a copy of
+				my privacy-sensitive information and have it transferred to another service provider.
+				<br>
+				<input type="checkbox" id="C6-object" value="right_object" name="C6"> I can object to the processing of
+				my privacy-sensitive information.
+				<br>
+				<input type="checkbox" id="C6-intervention" value="right_intervention" name="C6"> I can request human
+				intervention in the decision-making process that involves my privacy-sensitive information.
+				<br>
+				<input type="checkbox" id="C6-compliant" value="right_compliant" name="C6"> I can lodge my compliant to
+				the supervising authority regarding any misuse of my privacy-sensitive information.
+				<br>
+				<input type="checkbox" id="C6-opt" value="right_opt" name="C6"> I can opt-out of the sale or sharing of
+				my privacy-sensitive information.
+				<br>
+				<input type="checkbox" id="C6-Others" value="Others" name="C6"> Others:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px;">
+					<input class="mdl-textfield__input" type="text" id="C6-Specify-Others" name="C6">
+					<label class="mdl-textfield__label" for="C6-Specify-Others">please specify</label>
+				</div>
+				<br>
+				<input type="checkbox" id="C6-None" value="None" name="C6"> None of above
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.7</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the following statements about the <b><em>storage or retention</em></b> of my privacy-sensitive
+					information
+					collected by the Once mobile app (if I install and use it) are true
+					(Please select all that apply; if no option is applicable, please select “None of above”.):
+				</p>
+				<input type="checkbox" id="C7-Location" value="Location" name="C7">
+				The storage location (e.g., on my smartphone, on the app’s remote server, or on a third-party server) is
+				provided to me.
+				<br>
+				<input type="checkbox" id="C7-Period" value="Period" name="C7">
+				The storage or retention period (e.g., six months, two years, or forever) is provided to me.
+				<br>
+				<input type="checkbox" id="C7-Criterion" value="criterion" name="C7">
+				The criterion for determining the storage or retention period is provided to me
+				(e.g., my privacy-sensitive information will be stored until my request is addressed by a service
+				representative).
+				<br>
+				<input type="checkbox" id="C7-Post" value="Post" name="C7">
+				The post-storage or retention period policy is provided to me (e.g., my privacy-sensitive information
+				will be completely deleted, partially deleted, or anonymized after the retention period).
+				<br>
+
+				<input type="checkbox" id="C7-Others" value="Others" name="C7"> Others:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px;">
+					<input class="mdl-textfield__input" type="text" id="C7-Specify-Others" name="C7">
+					<label class="mdl-textfield__label" for="C7-Specify-Others">please specify</label>
+				</div>
+				<br>
+				<input type="checkbox" id="C7-None" value="None" name="C7"> None of above
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.8</b>
+					Based on the privacy practices I learned purely from the <b><em>privacy policy transparency
+							channel</em></b>,
+					the collection, use, and potentially sharing (with other parties)
+					of my privacy-sensitive information by the Once mobile app (if I install and use it) <b><em>may harm
+							me</em></b>
+					by incurring some online risks such as restraining me from expressing my views (e.g., political
+					views)
+					free from worry, allowing attackers to steal my identity, and/or decreasing my chances of getting a
+					good job in the future.
+				</p>
+				<input type="radio" id="C8-Strongly-agree" value="1" name="C8"> Strongly agree
+				<br>
+				<input type="radio" id="C8-Somewhat-agree" value="2" name="C8"> Somewhat agree
+				<br>
+				<input type="radio" id="C8-Neither-agree-nor-disagree" value="3" name="C8"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C8-Somewhat-disagree" value="4" name="C8"> Somewhat disagree
+				<br>
+				<input type="radio" id="C8-Strongly-disagree" value="5" name="C8"> Strongly disagree
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.9</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the collection, use, and potentially sharing (with other parties)
+					of my privacy-sensitive information by the Once mobile app (if I install and use it) <b><em>may harm
+							me</em></b> by
+					incurring some physical risks (e.g., stalking and burglary) to me or my family.
+				</p>
+				<input type="radio" id="C9-Strongly-agree" value="1" name="C9"> Strongly agree
+				<br>
+				<input type="radio" id="C9-Somewhat-agree" value="2" name="C9"> Somewhat agree
+				<br>
+				<input type="radio" id="C9-Neither-agree-nor-disagree" value="3" name="C9"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C9-Somewhat-disagree" value="4" name="C9"> Somewhat disagree
+				<br>
+				<input type="radio" id="C9-Strongly-disagree" value="5" name="C9"> Strongly disagree
+				<br>
+				<br>
+				<br>
+
+
+				<p style="font-size: 14pt;"><b>C.10</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the collection, use, and potentially sharing (with other parties)
+					of my privacy-sensitive information by the Once mobile app (if I install and use it) <b><em>may
+							benefit me</em></b>
+					by providing me with the customized service tailored to my preferences or needs.
+				</p>
+				<input type="radio" id="C10-Strongly-agree" value="1" name="C10"> Strongly agree
+				<br>
+				<input type="radio" id="C10-Somewhat-agree" value="2" name="C10"> Somewhat agree
+				<br>
+				<input type="radio" id="C10-Neither-agree-nor-disagree" value="3" name="C10"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C10-Somewhat-disagree" value="4" name="C10"> Somewhat disagree
+				<br>
+				<input type="radio" id="C10-Strongly-disagree" value="5" name="C10"> Strongly disagree
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.11</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the collection, use, and potentially sharing (with other parties)
+					of my privacy-sensitive information by the Once mobile app (if I install and use it) <b><em>may
+							benefit me</em></b>
+					by providing me with the enhanced online security protection such as better fraud detection or
+					prevention.
+				</p>
+				<input type="radio" id="C11-Strongly-agree" value="1" name="C11"> Strongly agree
+				<br>
+				<input type="radio" id="C11-Somewhat-agree" value="2" name="C11"> Somewhat agree
+				<br>
+				<input type="radio" id="C11-Neither-agree-nor-disagree" value="3" name="C11"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C11-Somewhat-disagree" value="4" name="C11"> Somewhat disagree
+				<br>
+				<input type="radio" id="C11-Strongly-disagree" value="5" name="C11"> Strongly disagree
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.12</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					I am concerned with the overall privacy risks associated with installing and using the Once mobile
+					app.
+				</p>
+				<input type="radio" id="C12-Strongly-agree" value="1" name="C12"> Strongly agree
+				<br>
+				<input type="radio" id="C12-Somewhat-agree" value="2" name="C12"> Somewhat agree
+				<br>
+				<input type="radio" id="C12-Neither-agree-nor-disagree" value="3" name="C12"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C12-Somewhat-disagree" value="4" name="C12"> Somewhat disagree
+				<br>
+				<input type="radio" id="C12-Strongly-disagree" value="5" name="C12"> Strongly disagree
+				<br>
+				<br>
+				Please explain your answer to Question C.12 with at least 15 words and with high quality:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 700px;">
+					<input class="mdl-textfield__input" type="text" id="C12-open-question" name="C12" onkeyup="wordCount('C12')">
+					<label class="mdl-textfield__label" for="C12-open-question">Enter text here</label>
+					<p id="C12-count" style="font-size: small;">Word Count: 0</p>
+				</div>
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.13</b> The <b><em>privacy policy transparency channel </b></em>
+					should be improved in some ways to help me better understand the privacy practices of the Once
+					mobile app
+					and better estimate the privacy risks associated with installing and using the app.</p>
+				<input type="radio" id="C13-Strongly-agree" value="1" name="C13"> Strongly agree
+				<br>
+				<input type="radio" id="C13-Somewhat-agree" value="2" name="C13"> Somewhat agree
+				<br>
+				<input type="radio" id="C13-Neither-agree-nor-disagree" value="3" name="C13"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C13-Somewhat-disagree" value="4" name="C13"> Somewhat disagree
+				<br>
+				<input type="radio" id="C13-Strongly-disagree" value="5" name="C13"> Strongly disagree
+				<br>
+				<br>
+				Please explain your answer to Question C.13 with at least 15 words and with high quality:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 700px;">
+					<input class="mdl-textfield__input" type="text" id="C13-open-question" name="C13" onkeyup="wordCount('C13')">
+					<label class="mdl-textfield__label" for="C13-open-question">Enter text here</label>
+					<p id="C13-count" style="font-size: small;">Word Count: 0</p>
+				</div>
+				<br>
+				<br>
+				<br>
+
+			</div>
+
+			<hr style="width:90%; margin: auto;" />
+			<h5 style="text-align: center;">
+				<script>
+					channelOrder = localStorage.getItem('channelOrder').split(',');
+					channelIndex = channelOrder.indexOf('privacy_policy');
+					if (channelIndex == 0) {
+						document.write("In the next step, you will be presented with the second privacy transparency channel to further learn about the app's privacy practices.")
+					} else if (channelIndex == 1) {
+						document.write("In the next step, you will be presented with the last privacy transparency channel to further learn about the app's privacy practices.")
+					} else {
+						document.write("You now finished interacting with all three privacy transparency channels.<br> In the next step, you will answer a set of questions about your overall opinions about the three channels.")
+					} 
+				</script>
+			</h5>
+			<div style="padding-bottom: 25px; text-align: center;">
+				<button onclick="submit()"
+					class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Next</button>
+			</div>
+		</div>
+
+
+
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function () {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.maxHeight) {
+						content.style.maxHeight = null;
+					} else {
+						content.style.maxHeight = content.scrollHeight + "px";
+					}
+				});
+			}
+		</script>
+
+</body>
+
+</html>

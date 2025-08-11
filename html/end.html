@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<head>
+	<style>
+	body {
+		background-color:gray;
+		color:black;
+		text-align: center;
+		text-justify: inter-word;
+		padding-top: 10%;
+		font-size: 17px;
+		margin-top: 50px;
+		margin-bottom: 100px;
+		margin-right: 200px;
+		margin-left: 200px;
+	}
+	</style>
+	<script src="../js/end.js"></script>
+	<link rel="stylesheet" href="../html/style.css">
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css" />
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<html>
+	<body>
+		
+		<div class="container" style="max-width: 960px; padding: 15px; text-align: left;">
+			<h4 style="text-align: center; color:red;"><b>Congratulations on completing the study!</b> </h4>
+			
+		<h4>
+			You have completed all the steps. We will review your answers and their quality.
+			In two weeks, we will compensate you using your Prolific ID (<u><script>document.write(localStorage.getItem('ProlificID'));</script></u>) 
+			if you answered all the questions with high quality.
+			<br><br>
+			<br><br>
+			<b>Please save the following survey code and submit it on the Prolific to recieve the compensation.</b> <br>
+			<b style="color: red;">Survey Code: </b>
+			<u><script>
+				if(! localStorage.getItem('surveyCode'))
+				{
+						document.write('Failed uploading responses to the server. Please download a copy of your responses using the link below and contact us.')
+				} else {
+						document.write(localStorage.getItem('surveyCode'))
+				}
+			</script></u>
+			<br>
+			<b>xxx can be reached at xxx (removed to avoid anonymity breach) if you have any concerns or problems.</b>
+			<br><br>
+			<br><br>
+			 
+			You can download a copy of your responses using the link below. 
+			We advise you download your responses and keep them until you are paid.
+			
+			
+			
+		</h4>
+		<div style="padding-bottom: 15px;">
+			<button onclick="downloadLocalStorage()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Download Your Responses</button>
+		</div>
+
+		<h4>You are good to close the page and leave the website now.</h4>
+		</div>
+	</body>
+</html>

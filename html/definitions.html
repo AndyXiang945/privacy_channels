@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		body {
+			background-color:gray;
+			color:black;
+			justify-content: center;
+		}
+
+		</style>
+		<meta charset="utf-8"/>
+		<script src="../js/definitions.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="../html/style.css">
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css" />
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	</head>
+	<body>
+		<div class="container" style="max-width: 1600px; text-align: center;">
+			<div class="settings-tray" style="background-color: #eee; text-align: center; padding-top: 15px; padding-bottom: 15px">
+				<h4><b>Important Background Information</b></h4>
+				<h4><b>Please read this page in detail</b></h4>
+				<h4>The following terms will be used frequently in this study, so please familiarize yourself with them.</h4>
+			</div>
+
+			<div class="flex-container" style="display: flex;">
+
+				<div class="container flex-child" style="flex: 0.5; text-align: center; padding: 15px;">
+					<h4><b>Google Play Store:</b></h4>
+					<p style="font-size: 14pt;">
+						The Google Play Store is the official platform for Android users to discover, download, and manage mobile applications. 
+						When visiting the Google Play Store, users are presented with a wealth of information about each app (e.g., app description, ratings, data safety, etc.) 
+						to help them make informed decisions.  
+					</p>
+
+					<h4><b>Privacy Transparency Channels:</b></h4>
+					<p style="font-size: 14pt;">
+						The Google Play Store provides multiple interfaces for app developers to communicate their apps' privacy and security practices. 
+						Our study focuses on mobile apps' privacy practices (e.g., data collection, storage, and sharing, etc.), 
+						and an app user can learn about them mainly through the <b><em>data safety, privacy policy,</em></b> and <b><em>permission manifest</em></b> interfaces provided by 
+						Google Play Store for an android app. We refer to these three interfaces as three Privacy Transparency Channels in this study.
+					</p>
+
+					<h4><b>Data Safety:</b></h4>
+					<p style="font-size: 14pt;">
+						The Google Play Store provides the <b><em>data safety privacy transparency channel</em></b> for 
+						an app developer to display an overview about what personal information is collected by the app and how the collected information will be used, etc.
+
+						<br>
+						An example of the data safety privacy transparency channel for the Google Home mobile app is shown in <a href="#data_safety_example">Fig.1</a>.
+					</p>
+
+					<h4><b>Privacy Policy:</b></h4>
+					<p style="font-size: 14pt;">
+						The Google Play Store provides the <b><em>privacy policy (privacy) transparency channel</em></b> for 
+						an app developer to provide an URL link of the app's privacy policy, 
+						which explains how the app collects, uses, stores, and protects app users' personal information, etc.
+						<br>
+						An example of the privacy policy transparency channel for the Google Home mobile app is shown in <a href="#privacy_policy_example">Fig.2</a>.
+					</p>
+
+		
+					<h4><b>Permission Manifest:</b></h4>
+					<p style="font-size: 14pt;">
+						The Google Play Store provides the <b><em>permission manifest privacy transparency channel</em></b> for 
+						an app developer to display the system permissions (e.g., access to the camera, microphone, contacts, GPS location, etc.) that the app may require. 
+
+						<br>
+						An example of the permission manifest privacy transparency channel for the Google Home mobile app is shown in <a href="#permission_example">Fig.3</a>.
+					</p>
+					
+				</div>
+
+		</div>
+		<br>
+		<br>
+			<div class="container" style="max-width: 1600px; text-align: center;">
+				<hr style="width:90%; margin: auto;" />
+				<h5><b>An Example of the Data Safety Privacy Transparency Channel on the Google Play Store</b></h5>
+				<!-- <div><img src="/app_img/definition_examples_1.png" style="max-width: 1600px;"/></div> -->
+
+				<figure id="data_safety_example">
+					<img src="/img/GoogleHomeExampleSafety.png" style="max-width: 1600px;">
+					<figcaption>
+						<b style="font-size: 14pt;">Fig.1 - The privacy practice information provided on the data safety privacy transparency channel for the Google Home mobile app.</b>
+						<br>
+						<br> 
+						<p style="font-size: 14pt;">The data safety section (Fig.1.(a)) on the app's main page provides a high-level summary of the app's privacy and security practices.
+						When clicking on the right-arrow or the "See details" button, more privacy practice information will be displayed on the app's data safety page to a user (Fig.1.(b)).</p>
+					</figcaption>
+				</figure>
+
+				<br>
+				<br>
+				<br>
+				<hr style="width:90%; margin: auto;" />
+				<h5><b>An Example of the Privacy Policy Transparency Channel on the Google Play Store</b></h5>
+
+				<!-- <div><img src="/app_img/definition_examples_2.png" style="max-width: 1600px;"/></div> -->
+				<figure id="privacy_policy_example">
+					<img src="/img/GoogleHomeExamplePolicy.png" style="max-width: 1600px;">
+					<figcaption>
+						<b style="font-size: 14pt;">Fig.2 - The privacy practice information provided on the privacy policy transparency channel for the Google Home mobile app.</b>
+						<br>
+						<br> 
+						<p style="font-size: 14pt;"> 
+							The privacy policy section (Fig.2.(a)) on the app's data safety page provides an URL link to the Google Home mobile app's privacy policy.
+							When clicking on the URL link, the app's privacy policy webpage will be displayed to a user (Fig.2.(b)).</p>
+					</figcaption>
+				</figure>
+
+				<br>
+				<br>
+				<br>
+				<hr style="width:90%; margin: auto;" />
+				<h5><b>  An Example of the Permission Manifest Privacy Transparency Channel on the Google Play Store
+					 </b></h5>
+				<!-- <div><img src="/app_img/definition_examples_3.png" style="max-width: 1600px;"/></div> -->
+				<figure id="permission_example">
+					<img src="/img/GoogleHomeExamplePermission.png" style="max-width: 1600px;">
+					<figcaption>
+						<b style="font-size: 14pt;">Fig.3 - The privacy practice information provided on the permission manifest privacy transparency channel for the Google Home mobile app.</b>
+						<br>
+						<br>
+						<p style="font-size: 14pt;">When clicking on the "About this app" button on the app's main page (Fig.3.(a)), the detailed app description page (Fig.3.(b)) will be displayed to a user.
+						When clicking on the "App permissions - See More" button on the detailed app description page, the system permissions page (Fig.3.(c)) will be displayed to a user.</p> 
+					</figcaption>
+				</figure>
+
+				<br>
+				<hr style="width:90%; margin: auto;" />
+
+				<h5>In the next step, you will answer a set of questions before we assign a mobile app to you for learning about the app's privacy practices.</h5>	
+				<div class="button-tray">
+					<button onclick="goToPreStudy()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Next</button>
+				</div>
+				
+			</div>
+
+		</div>
+
+
+
+
+
+
+	</body>
+</html>

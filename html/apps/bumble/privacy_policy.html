@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body {
+			background-color: gray;
+			color: black;
+			text-align: center;
+			font-size: 18px;
+		}
+
+		.container1 {
+			margin: auto;
+			background: #fff;
+			padding: 0;
+			border-radius: 7px;
+		}
+
+		* {
+			font-family: Arial;
+		}
+
+		table, th, td {
+			border: 1px solid black;
+			}
+	</style>
+	<meta charset="utf-8" />
+
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css" />
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<noscript>
+		<div id="main-content">
+			<h2>JavaScript is off. Please enable JavaScript in order to continue.</h2>
+		</div>
+	</noscript>
+
+	<link rel="stylesheet" href="css/privacy_policy.css">
+	<script src="js/privacy_policy.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(window).on("scroll", function() {
+				if (localStorage.getItem("scroll_pp") == null){
+					localStorage.setItem("scroll_pp", $(window).scrollTop());
+				} else {
+					localStorage.setItem("scroll_pp", localStorage.getItem("scroll_pp") + ',' + $(window).scrollTop());
+				}
+				
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<div class="container1" style="max-width: 1600px; background-color: white;">
+		<div class="settings-tray">
+			<div class="text" style="text-align: center; background-color: #eee; padding: 0% 10%;">
+				<br>
+				<h4><b>Privacy Policy Transparency Channel for the Bumble App</b></h4>
+				<h6>
+					<b>Now you are presented with the <em>privacy policy transparency channel</em>
+						<script>
+							channelOrder = localStorage.getItem('channelOrder').split(',');
+							channelIndex = channelOrder.indexOf('privacy_policy');
+							if (channelIndex == 0) {
+								document.write("(the first of the three channels)");
+							} else if (channelIndex == 1) {
+								document.write("(the second of the three channels)");
+							} else {
+								document.write("(the last of the three channels)");
+							}
+						</script>
+						for the <b>Bumble</b> mobile app.
+					</b>
+					<br>
+					Please closely follow the instructions for interacting with the channel (2 steps in total).
+					<br>
+					* The privacy policy shown below is extracted from the privacy policy provided on the Google Play Store for the Bumble mobile app.
+					<br>
+					<br>
+				</h6>
+			</div>
+		</div>
+
+		<div class="tooltip_right_arrow_left" style="position: relative; left: 350px; top: 60px">
+			<span class="tooltiptext" id="instruction1" style="width: 220px;">
+				Step 1/2: Read the privacy policy.
+				<br>
+				Please note:
+				<br>
+				1. <b>Scroll down</b> for more contents.
+				<br>
+				2. <b>Click on the red color checkboxes*</b> next to the section titles.
+				<br>
+				(*We added the checkboxes for you to indicate that you read the sections.)
+				<br>
+				<a onclick="next('instruction2')"><u>Next</u></a>
+			</span>
+
+		</div>
+
+		<div class="tooltip_right_arrow_left" style="position: relative; left: 350px; top: 600px">
+			<span class="tooltiptext" id="instruction2" style="width: 220px; display: none;">
+				Step 2/2: After reading the privacy policy, please click <a href="#SurveyContainer"
+					onclick="gotoSurvey()">here</a> to answer the questions.
+			</span>
+
+		</div>
+
+		<div id="privacy_policy_anno" style="width: 700px; height: 80vh; margin: auto; overflow-x: hidden; padding:5px; 
+			overflow-y: auto; border:1px solid black; ">
+			<h3>Bumble Privacy Policy</h3>
+			<div style="text-align: left; overflow-x: hidden; overflow-y: auto; padding: 15px;">
+				<!-- <label style="margin: 0px; text-align: left; font-size: 20px;">Information that you provide</label>
+					<input type="checkbox" id="section1" value="1" style="width: 18px; height: 18px"> -->
+				<h4>1. COLLECTION OF INFORMATION. <input type="checkbox" id="section1" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4>
+				<h5>Registration Information</h5>
+				<p>When you download the App and create an account (“Account”), we may
+					collect certain information (“Registration Information”) about you, such
+					as:</p>
+				<ul>
+					<li>Name;</li>
+					<li>Username;</li>
+					<li>Email address;</li>
+					<li>Cell number;</li>
+					<li>Gender identity;</li>
+					<li>Date, time, and location of birth;</li>
+					<li>Sexual preference;</li>
+					<li>Photographs;</li>
+					<li>Location; and</li>
+					<li>Login information for social media accounts that you connect to your
+						Bumble Account.</li>
+				</ul>
+				<p>For Users who are California residents, the data we may collect falls
+					within the following categories of “personal information”, as defined by
+					the California Consumer Privacy Act (CCPA):</p>
+				<ul>
+					<li>A. Identifiers, such as name and location;</li>
+					<li>B. Personal information, as defined in the California customer
+						records law, such as contact (including email and telephone number)
+						and financial information;</li>
+					<li>C. Characteristics of protected classifications under California or
+						federal law (if you choose to provide them), such as age, gender
+						identity, marital status, sexual orientation, race, ancestry,
+						national origin, religion, and medical conditions;</li>
+					<li>D. Commercial information, such as transaction information and
+						purchase history;</li>
+					<li>E. Biometric information;</li>
+					<li>F. Internet or network activity information, such as browsing
+						history and interactions with our Sites and App;</li>
+					<li>G. Geolocation data, such as mobile device location;</li>
+					<li>H. Audio, electronic, visual and similar information, such as photos
+						and videos;</li>
+					<li>I. Professional or employment-related information, such as work
+						history and prior employer;</li>
+					<li>J. Non-public education information; and</li>
+					<li>K. Inferences drawn from any of the personal information listed
+						above to create a profile or summary about, for example, an
+						individual’s preferences and characteristics.</li>
+				</ul>
+				<h5>Profile Information</h5>
+				<p>When you post information about yourself or use the messaging function to
+					communicate with other Users, the amount of personal information you
+					share is at your own risk. Please see Section 4 below for more
+					information on who can access what you post on Bumble.</p>
+				<h5>Profile Verification Information (Including Biometric Information)</h5>
+				<p>For safety and security and to ensure you have the best possible user
+					experience, we require Users to verify their accounts and might ask for
+					your phone number and, in some instances, we might also ask that you
+					carry out photo verification. We want to make sure you are not a robot! And we
+					also want to avoid fake Bumble accounts being created which can be used
+					for malicious activities and cybercrime – they threaten the Bumble
+					network and spoil things for everyone. This verification might be
+					required by us for the prevention of fraud. You can also verify your
+					photo on a voluntary basis (to add the blue ‘verified’ badge to your
+					profile).</p>
+				<p>If you choose to verify your profile photo, we will scan each photo that
+					you submit. The scan may include the use of facial recognition
+					technology so that we can compare the photo you submit to your profile
+					photo, to help ensure that you are who you say you are. We do not add
+					the verification photos to your profile. We retain the scans so that we
+					can verify you in the future and for our record-keeping purposes until
+					we no longer need them for such purposes or for three years after your
+					last interaction with us, whichever occurs first. After the applicable
+					retention period expires, we take commercially reasonable steps to
+					permanently and securely delete the scans from our systems.</p>
+				<h5>Purchases Information</h5>
+				<p>If you decide to purchase any of our
+					premium services, we will process your payment information and retain
+					this securely for the prevention of fraud and for audit/tax
+					purposes.</p>
+				<p>Bumble uses automated decisions to prevent fraudulent payment
+					transactions being processed as part of its anti-fraud procedures. In
+					order to do this, our systems check payment transactions for behavior
+					that indicates breaches of our Terms and Conditions of Use. If a
+					transaction meets certain criteria that demonstrate that the Terms and
+					Conditions of Use are likely to have been breached and the transaction
+					is likely to be fraudulent, the relevant transaction may automatically
+					be blocked. Where a transaction is blocked, the user will be notified
+					that their transaction cannot be processed and affected Users can
+					contact Bumble to contest the decision.</p>
+				<p>Please note that if your account is blocked for any reason, any
+					account(s) that you have on other Bumble Group platforms/applications,
+					such as Badoo, may also be blocked as part of our anti-spam and
+					anti-fraud procedures.</p>
+				<h5>Geolocation Information</h5>
+				<p>If you have given Bumble access to your location in your device settings,
+					when you use your cell, we will collect information about WiFi access
+					points as well as other location information about your longitude and
+					latitude and may save your device’s coordinates to offer certain
+					features to you. This information helps us identify your physical
+					location and we use it to personalize the App and make it easier for you
+					to interact with other Users, by enabling the general locality
+					information to be displayed to Users seeing your profile and showing you
+					the profiles of other Users who are near you.</p>
+				<p>If you have given Bumble access to your location, but wish to turn this
+					off, you can do so by the following methods:</p>
+				<ol>
+					<li>iPhone app — settings, privacy, location services, Bumble</li>
+					<li>Android — settings, location, Bumble, permissions, location</li>
+				</ol>
+				<h5>Device and Photos Information</h5>
+				<p>We may collect information about your device when you use the App
+					including the unique device identifier, device model, and operating
+					system, for a number of purposes, as set out in this policy. In
+					addition, if you permit us to do so, the App may access your device’s
+					address book solely in order to add someone to your contacts.</p>
+				<p>We also collect data about your photos, such as which are the photos that
+					users spend time on or which are the photos that have the best lighting,
+					etc. We may use that data to rearrange your profile photos aiming to
+					position them in a way that is favorable to you. You may opt-out of this
+					feature through our app settings.</p>
+				<h5>Links</h5>
+				<p>We may keep track of how you interact with links available on Bumble
+					including third party services by redirecting clicks or through other
+					means. We may share aggregate click statistics such as how many times a
+					particular link was clicked on.</p>
+				<h5>Messages</h5>
+				<p>We review the content of messages sent in the App to identify topics,
+					sentiments, and trends across our Users. We will take steps to remove
+					personally identifying information from such messages, prior to
+					reviewing them. We will not share the content of User messages or
+					information we derive from them with any third party.</p>
+				<h5>Bumble Success Stories, Surveys and other Contributions</h5>
+				<p>From time to time, we run surveys for research purposes and we may
+					contact you to find out if you would like to take part. We may also
+					contact you to find out if you would like to provide feedback, a
+					testimonial or take part in marketing campaigns (for example, if you let
+					us know that you have found a match on the App, we may contact you to
+					ask if you would be happy to feature in advertising for Bumble).
+				</p>
+				<h5>When you Contact Customer Support</h5>
+				<p>If you contact our Customer Support team via our Feedback
+						Page, we will
+					receive your email address, and may track your IP address, as well as
+					the information you send to us to help resolve your query. We will keep
+					records of our communications with you, including any complaints that we
+					receive from you about other Users (and from other Users about you) for
+					6 years after deletion of your account.</p>
+				<h4>2. USE OF YOUR INFORMATION. <input type="checkbox" id="section2" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4>
+				<p>Our main goal is to ensure your experience on Bumble is an enjoyable one
+					and you don’t end up getting stung! In order to deliver an enjoyable
+					experience to you, we may use your Registration and other information
+					to:</p>
+				<ul>
+					<li>offer you our services and features;</li>
+					<li>contact you with information about the App (e.g., updates and new
+						features);</li>
+					<li>personalize the App/Sites and the content we deliver to you;</li>
+					<li>conduct research and analytics about how you use and interact with
+						the App/Sites;</li>
+					<li>to test new technologies and processes designed to enhance and
+						improve the App/Sites;</li>
+					<li>resolve disputes, troubleshoot problems and to enforce our Terms
+						&amp; Conditions;</li>
+					<li>investigate fraud, protect our legal rights, and to enforce our
+						Terms &amp; Conditions.</li>
+					<li>to send you information about the promotions and offers we have
+						available. We will not use your information in email
+						direct marketing unless you give us your consent (you can withdraw from
+						marketing at any time via Settings in the App or by using the
+						opt-out mechanisms and links provided in each message); and</li>
+					<li>protect our Users and third parties from harm.</li>
+				</ul>
+				<h5>Our Matching Algorithms</h5>
+				<p> We use the following
+					data about you and other users to predict your compatibility with others
+					and generate profile recommendations: <b>the information you provide us
+						about yourself</b> in your profile such as age, distance or gender
+					so we can show you people who are appropriate and are more likely to
+					like you back; <b>information about how you interact with our app</b> to
+					suggest to you people who are active and available to meet new people;
+					<b>and your device coordinates</b>, which are necessary to understand
+					your proximity to other members. 
+				</p>
+				<h5>Moderation Practices</h5>
+				<p>We use a combination of automated systems and a team of moderators to
+					monitor and review accounts (including photos and any other information
+					uploaded onto user profiles) and messages for content that indicates
+					breaches of our Terms and Conditions of Use. </p>
+				<h5>Lawful Basis</h5>
+				<p>Under EU and UK data protection laws, we are required to tell you our
+					lawful basis for using your data and we have set this out in the table
+					below. Where the legal basis is consent, you can withdraw consent at any
+					time. Where the legal basis is legitimate interests, you have a right to
+					object to our use of your data. We explain in the relevant sections in
+					this Policy how you can withdraw consent or opt-out of certain data uses
+					(where applicable).</p>
+				<table>
+					<tbody>
+						<tr>
+							<th style="width:33%">Purpose for which data is used</th>
+							<th style="width:33%">Data</th>
+							<th>Source</th>
+							<th>Legal basis</th>
+						</tr>
+						<tr>
+							<td>To provide you with the Bumble social networking
+								service</td>
+							<td>Name, email address, date of birth, location (CCPA
+								Categories A and B)</td>
+							<td>You provide your name, email address and date of birth to
+								us. We obtain location data from the device that you use to
+								access the service</td>
+							<td>Contractual necessity</td>
+						</tr>
+						<tr>
+							<td>To facilitate networking opportunities on the Bumble
+								App</td>
+							<td>Optional information that you choose to provide in your
+								profile, including through profile verification, or adding
+								Bumble badges, which may include information about your
+								sexual preferences, non-binary gender, religion, ethnic
+								background, photos, interests, etc. (CCPA Categories B, C,
+								H, I, J)</td>
+							<td>You provide this information to us</td>
+							<td>Contractual necessity and our legitimate interests – it is
+								in our legitimate interests to facilitate networking
+								opportunities in the Bumble app. For special
+								category/sensitive personal data, we rely on your explicit
+								consent.</td>
+						</tr>
+						<tr>
+							<td>To verify your identity and prevent fraud and to ensure the
+								safety and security of Users</td>
+							<td>Phone number and if requested or permitted, photo provided
+								as part of profile verification and for users based in
+								countries where age verification is required by law: photo
+								of Government ID + geolocation and device information (CCPA
+								Categories A, B, C, E, F, G and H)</td>
+							<td>You provide this information to us, except for the
+								geolocation and device information, which we obtain from the
+								device that you use to access the service</td>
+							<td>Legitimate interests – it is in our legitimate interests to
+								ensure that accounts are not set up fraudulently and to
+								safeguard Users of the site</td>
+						</tr>
+						<tr>
+							<td>To take payment for premium services (not applicable for
+								Users making payments via the Apple App Store)</td>
+							<td>Payment card details (CCPA Categories B and D)</td>
+							<td>You provide this information to us</td>
+							<td>Contractual necessity</td>
+						</tr>
+						<tr>
+							<td>To send you marketing information about our events, offers
+								and services</td>
+							<td>Name, email address, postal address, Instagram handle and
+								mobile phone number (CCPA Categories A and B)</td>
+							<td>You provide this information to us</td>
+							<td>Consent or legitimate interests and in accordance with the
+								laws applying to our marketing activities. We have a
+								legitimate interest in promoting our business and
+								products</td>
+						</tr>
+						<tr>
+							<td>To carry out research and analysis to help us improve the
+								App and to test new technologies and processes designed to
+								enhance and improve the App/Sites</td>
+							<td>Log and usage data, including IP address, browser type,
+								referring domain, pages accessed, mobile carrier and search
+								terms, images and video, registration information, profile
+								information (CCPA Categories A, F and H)</td>
+							<td>You provide photos and videos to us. We obtain the log and
+								usage information from the device that you use to access the
+								service</td>
+							<td>Legitimate interests – it is in our legitimate interests to
+								analyze the way in which Users are accessing and using our
+								services and to test new technologies so that we can further
+								develop the App, implement security measures and improve the
+								service</td>
+						</tr>
+						<tr>
+							<td>To respond to correspondence and queries that you submit to
+								us, including social media queries</td>
+							<td>Email address and IP address, social media name, phone
+								number (CCPA Categories B and F)</td>
+							<td>You provide your email address, social media name and phone
+								number to us when you contact us and we obtain your IP
+								address from the device that you use to contact us</td>
+							<td>Legitimate interests – it is in our legitimate interests to
+								respond to your queries to ensure that we provide a good
+								service to Users and troubleshoot problems</td>
+						</tr>
+						<tr>
+							<td>To investigate and block Users for reported infringements of
+								our Terms and Conditions of Use</td>
+							<td>Name and user registration details, profile information,
+								content of messages and photographs + usage and device data
+								such as IP address and IP session information (CCPA
+								Categories A, B, C, F, and H)</td>
+							<td>You provide your registration details, profile information,
+								messages and photographs to us. We obtain the other
+								information from the device that you use to access the
+								service.</td>
+							<td>Legitimate interests - it is in our legitimate interests to
+								prevent unauthorized behavior and to maintain the safety and
+								integrity of our services</td>
+						</tr>
+						<tr>
+							<td>To improve your experience on the App </td>
+							<td>Data about profile photos such as whether the first profile
+								photo is scrolled on or not and whether the vote is a yes or
+								a no</td>
+							<td>We obtain this information from the way users interact with
+								the App and the profile photos of other users</td>
+							<td>Legitimate interest - it is in our legitimate interest to
+								improve our users’ experience</td>
+						</tr>
+						<tr>
+							<td>To enable Users to create and enhance their Bumble profile
+								and log into the App via third party accounts</td>
+							<td>Data from Facebook and other third-party accounts (see
+								section 7 of this Privacy Policy for more details) (CCPA
+								Categories A, B, C, and H)</td>
+							<td>We obtain this information from Facebook, or the providers
+								of any other accounts you use to log in or connect with your
+								Bumble account</td>
+							<td>Legitimate interests – it is in our legitimate interests to
+								facilitate access to our services</td>
+						</tr>
+						<tr>
+							<td>To block payment transactions as part of our anti-fraud
+								procedures</td>
+							<td>Name, IP address, email address, mobile number, cardholder
+								name, payments received, type of payment, user ID, country
+								(CCPA Categories, A, B, and D)</td>
+							<td>You provide your name, email address, mobile number and card
+								details to us. We obtain your IP address from the device
+								that you use to contact us. We obtain your payment
+								information from your interactions with our service</td>
+							<td>Legitimate interests – it is in our legitimate interests to
+								prevent fraudulent transactions and to maintain the security
+								of our services</td>
+						</tr>
+						<tr>
+							<td>To serve promo cards and advertisements on the App</td>
+							<td>Location, gender, age, and information that you have
+								optionally provided us with via your profile (CCPA
+								Categories A, C and G)</td>
+							<td>We obtain age, gender and profile information from you, and
+								location data from the device that you use to access the
+								service</td>
+							<td>Legitimate interests – it is in our legitimate interests to
+								target advertisements so that Users see relevant
+								advertisements and to allow us to generate income from
+								advertising revenue</td>
+						</tr>
+						<tr>
+							<td>To serve advertisements on third party networks and measure
+								the effectiveness of such ads</td>
+							<td>Data about your visit to our Sites or App and action taken
+								on those (for example if you downloaded our App or created
+								an account with Bumble), IP address (and your estimated
+								location based on your IP address), age and gender, device
+								ID (CCPA Categories B, C, G, F and K)</td>
+							<td>We obtain age and gender from you and we obtain other
+								information from the device or browser that you use to
+								access the service</td>
+							<td>Consent – as indicated by you in your Privacy
+								Settings/Cookies Settings preferences and via your browser
+								or device privacy preferences (where required by your device
+								manufacturer, for example Apple devices using iOS
+								14.5).</td>
+						</tr>
+						<tr>
+							<td>To contact you in order to run surveys for research purposes
+								and to obtain feedback, and to find out if you want to take
+								part in marketing campaigns</td>
+							<td>Email address and cell phone number (CCPA Category B)</td>
+							<td>You provide this information to us</td>
+							<td>Legitimate interests – it is in our legitimate interests to
+								carry out research so that we can further develop the app
+								and improve the service</td>
+						</tr>
+						<tr>
+							<td>To enable video and audio call functions, and the sending of
+								images and video</td>
+							<td>Video and audio call usage data, images and video (CCPA
+								Categories F and H)</td>
+							<td>We obtain this information from the device that you use to
+								access the service</td>
+							<td>Legitimate interests – it is in our legitimate interests to
+								provide these functionalities as part of the services</td>
+						</tr>
+						<tr>
+							<td>To defend legal claims, protect legal rights and to protect
+								people from harm</td>
+							<td>This could include any information that is relevant to the
+								issue</td>
+							<td>This information may be obtained directly from you, from
+								your device or from third parties, depending on the
+								information involved</td>
+							<td>Legitimate interests – it is in our legitimate interests to
+								protect our legal rights, defend legal claims and to protect
+								our Users and third parties from harm</td>
+						</tr>
+					</tbody>
+				</table>
+				<h5 id="Processing-we-perform-to-improve-services-for-students">Processing
+					We Perform To Improve Services For Students</h5>
+				<p><b>What we’re doing.</b> We process personal data to understand which of
+					our users may be in college or university. To do this, we look at
+					historic location data to understand whether your device’s coordinates
+					match to a general university or college area. For this activity, we use
+					recent historic data regarding where you opened the Bumble app and we’ll
+					keep a simple “at campus yes/no” result based on our findings. <b>What
+						we don’t do.</b> We do not track your real-time movements as part of
+					this activity and we do not identify or store information about where
+					you are studying. To protect your privacy, we do not retain any of the
+					location data used for this activity and it is permanently deleted once
+					the results are generated. <b>Why we’re doing this.</b> We’ll combine
+					the results of this processing with other relevant information we hold
+					for the following purposes: so we can send the right offers, events and
+					features to the right users; to understand which Bumble events are
+					popular with the student demographic and which aren’t working so well;
+					and to improve the design of the App to meet the needs of students.</p>
+				<h4>3. DISCLOSURE OF INFORMATION. <input type="checkbox" id="section3" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4>
+				<p>Our policy is to not disclose your Registration Information or personal
+					data, except in the limited circumstances described here:</p>
+				<table>
+			
+						<tr>
+							<th style="width:50%;">Circumstances where data may be
+								disclosed</th>
+							<th style="width:50%">Disclosed data</th>
+						</tr>
+						<tr>
+							<td><b>Service Providers</b></td>
+							<td>This could include all data, including all CCPA Categories
+								listed above</td>
+						</tr>
+						<tr>
+							<td><b>Moderators</b></td>
+							<td>Name and user registration details, profile information,
+								content of messages and photographs (CCPA Categories A, B,
+								C, and H)</td>
+						</tr>
+						<tr>
+							<td><b>Payment Processing and Telecommunications Companies</b></td>
+							<td>Cardholder name, cardholder address, card number, payment
+								amount, transaction date/time (CCPA Categories A, B, and
+								D)</td>
+						</tr>
+						<tr>
+							<td><b>Law and Harm</b></td>
+							<td>This could include any personal data that Bumble holds about
+								you, depending on the nature of the request or the issue
+								that we are dealing with, including all CCPA Categories
+								listed above</td>
+						</tr>
+						<tr>
+							<td><b>Business Transfers</b></td>
+							<td>This could include all personal data that Bumble holds about
+								you, including all CCPA Categories listed above</td>
+						</tr>
+						<tr>
+							<td><b>Marketing Services Providers</b></td>
+							<td>Advertising identifier associated with your device (Device
+								ID), estimated location (based on your IP address), age,
+								gender and data about your visit to our Sites or App and
+								action taken on those (for example if you downloaded our App
+								or created an account with our App), hashed email address
+								(for ‘custom audiences’ only) (CCPA Categories B, C, G, F
+								and K)</td>
+						</tr>
+						<tr>
+							<td><b>Anti-Spam and Anti-Fraud</b></td>
+							<td>Email address, phone number, IP address and IP session
+								information, social network ID, username, user agent string,
+								and transaction and payment data (CCPA Categories B, F and
+								D).</td>
+						</tr>
+				
+				</table>
+				<p><b>Aggregated Information</b> – We may share aggregated information with
+					third parties that includes your personal data (but which doesn’t
+					identify you directly) together with other information including log
+					data for industry analysis and demographic profiling.</p>
+				<h5>MORE INFORMATION ABOUT DISCLOSURES</h5>
+				<br>
+				<h5>Service Providers</h5>
+				<p>We engage certain trusted third parties to
+					perform functions and provide services to us (“Service Providers”). The
+					suppliers with which Bumble shares User personal data vary depending on
+					a variety of factors, such as which of our App, Sites and services a
+					User engages with. For example, to provide our services to Users, we
+					typically use the following suppliers:</p>
+				<ul>
+					<li>Billing services</li>
+					<li>Authentication services</li>
+					<li>Social media providers</li>
+					<li>Product improvement and
+						market research</li>
+					<li>IT services</li>
+				</ul>
+				<h5>Marketing Services Providers</h5>
+				<p>We share a limited amount of your personal data with these Marketing
+					Services Providers, such as:</p>
+				<ul>
+					<li>the advertising identifier associated with your device (this is a
+						random number assigned by your mobile device manufacturer (for
+						example Apple or Google) to your device to help advertisers
+						(including the manufacturer) know when an ad has been viewed or
+						clicked in an app, and when an ad causes a ‘conversion’ (for
+						example, downloading the app advertised to you))</li>
+					<li>your estimated location (based on your IP address)</li>
+					<li>age and gender</li>
+					<li>data about your visit to our Sites or App and action taken on those
+						(for example if you downloaded our App, created an account with our
+						App, or details of any purchases made on Site or in App)</li>
+					<li>a hashed* version of your email address (to create ‘custom
+						audiences’).</li>
+					<br>
+				</ul>
+
+				<h4>4. YOUR CALIFORNIA PRIVACY RIGHTS. <input type="checkbox" id="section4" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4>
+				<p>For Users who are California residents, you have the following rights (in
+					addition to those listed at section 10 below) under the California
+					Consumer Privacy Act, and you have the right to be free from unlawful
+					discrimination for exercising your rights under the Act:</p>
+				<ol>
+					<li>You have the right to request that we disclose certain information
+						to you and explain how we have collected, used and shared your
+						personal information over the past 12 months.</li>
+					<li>You have the right to request that we delete your personal
+						information that we collected from you, subject to certain
+						exceptions.</li>
+				</ol>
+				<p> At this time, we do not track our Users’
+					personal information over time and across third-party online services.
+					We do not knowingly permit third parties to
+					collect personal information about an individual User’s online
+					activities over time and across different online services when using the
+					App.</p>
+				<h4>5. YOUR RIGHTS. <input type="checkbox" id="section5" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4>
+				<p>Privacy laws applicable in your country may give you the following
+					rights:</p>
+				<ol>
+					<li>Right to be informed: what personal data an organization is
+						processing and why (we provide this information to you in this
+						Privacy Policy).</li>
+					<li>Right of access: you can request a copy of your data.</li>
+					<li>Right of rectification: if the data held is inaccurate, you have the
+						right to have it corrected.</li>
+					<li>Right to erasure: you have the right to have your data deleted in
+						certain circumstances.</li>
+					<li>Right to restrict processing: in limited circumstances, you have the
+						right to request that processing is stopped but the data
+						retained.</li>
+					<li>Right to data portability: you can request a copy of certain data in
+						a machine-readable form that can be transferred to another
+						provider.</li>
+					<li>Right to object: in certain circumstances (including where data is
+						processed on the basis of legitimate interests or for the purposes
+						of marketing) you may object to that processing.</li>
+					<li>Rights related to automated decision-making including profiling:
+						there are several rights in this area where processing carried out
+						on a solely automated basis results in a decision which has legal or
+						significant effects for the individual. In these circumstances your
+						rights include the right to ensure that there is human intervention
+						in the decision-making process.</li>
+				</ol>
+				<p>If you want to exercise any of your rights listed above please visit our
+					Feedback Page or email our
+					Data Protection Officer at DPO@bumble.com You can also
+					contact us by post at the following address: The Broadgate Tower Third
+					Floor, 20 Primrose Street, London, United Kingdom, EC2A 2RS. For your
+					protection and the protection of all of our Users, we may need to
+					request specific information from you to help us confirm your identity
+					before we can answer the above requests.
+				</p>
+				<p>If you have a concern about how we have processed your request or your
+					personal data, you should contact us in the first instance via the
+					contact details listed above.</p>
+				<p>If you feel we have not resolved
+					your concern, you have the right to make a complaint at any time to the
+					Information Commissioner’s Office (ICO), the UK supervisory authority for data protection issues.
+					If you live in a country or territory located in the European Union (EU)
+					or European Economic Area (EEA), you may also get in touch with your
+					local Data Protection Regulator. If you live in a country outside the EU,
+					you may have the right to lodge a complaint with your local privacy or
+					data protection regulator.
+				</p>
+				<h4>6. DATA LOCATIONS. <input type="checkbox" id="section6" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4>
+				<p>We want you to be able to access Bumble
+					wherever you happen to be in the world. To enable us to provide that
+					service, we operate a global network of servers including in the US, UK,
+					EU, and (for Users located in Russia) Russia. The hardware is located in
+					third-party data centers but is owned by the Bumble Group. Data
+					collected by Advertising Partners and other Service Providers may also
+					be held outside the UK and the European Economic Area. We ensure that
+					the data is adequately protected by ensuring that valid, legal
+					mechanisms are in place such as: EU approved model clauses, and implementing robust contractual
+					standards. If you want more information relating to the nature of the
+					safeguards we have in place, please email DPO@bumble.com.</p>
+				<h4>7. DATA RETENTION AND DELETION. <input type="checkbox" id="section7" value="1" style="width: 20px; height: 20px; outline: 2px solid #e90707ef;"></h4>
+				<p>We keep your personal information only as long as we need it for the
+					legal basis relied upon (as set out in Section 2 above) and as permitted
+					by applicable law. Please see “Profile Verification Information
+					(Including Biometric Information)” in Section 1, above, to learn about
+					our retention policy with respect to biometric information.</p>
+				<p>When your Account is deleted, we make sure it is no longer viewable in
+					the App. For up to 28 days, it is still possible to restore your Account
+					if it was accidentally deleted. After 28 days, we begin the process of
+					deleting your personal information from our systems, unless:</p>
+				<ol>
+					<li>we must keep it to comply with applicable law (for instance, if you
+						make purchases within the App, some personal data may be kept for
+						tax and accounting purposes);</li>
+					<li>we must keep it to evidence our compliance with applicable law (for
+						example, if an account is blocked, we keep some account information
+						and a record of the behavior that led to the block - this
+						information is retained for evidential purposes in case of queries
+						or legal claims concerning the block);</li>
+					<li>there is an outstanding issue, claim or dispute requiring us to keep
+						the relevant information until it is resolved; or</li>
+					<li>the information must be kept for our legitimate business interests,
+						such as fraud prevention and enhancing Users’ safety and security
+						(for example, information may need to be kept to prevent a user who
+						was banned for unsafe behavior or security incidents from opening a
+						new account).</li>
+				</ol>
+
+
+			</div>
+
+
+
+		</div>
+
+
+
+
+		<div class="container" id="SurveyContainer" style="max-width: 1600px; background-color: white; display: none;">
+			<hr>
+
+			<div style="max-width: 960px; text-align: left; padding-left: 400px; font-size: 14pt;">
+				<h4 style="text-align: center;">
+					Please answer the following questions (C.1-C.13)
+					based on your interactions with the privacy policy transparency channel for the Bumble mobile app.
+				</h4>
+				<h6 style="text-align: center;">
+					<script>
+						channelOrder = localStorage.getItem('channelOrder').split(',');
+						channelIndex = channelOrder.indexOf('privacy_policy');
+						if (channelIndex == 1) {
+							document.write("* Note that these 13 questions are identical to those you answered for the previous privacy transparency channel, except that they are for the <b><em>privacy policy transparency channel</em></b>. <br><br>")
+						} else if (channelIndex == 2) {
+							document.write("* Note that these 13 questions are identical to those you answered for the previous privacy transparency channels, except that they are for the <b><em>privacy policy transparency channel</em></b>. <br><br>")
+						} 
+					</script>
+					* Please DO NOT refresh or close the current page, or go back to the previous page until you have
+					completed the whole study.
+					You will see the "Congratulations..." confirmation page at the end indicating your completion of the
+					study.
+					You can scroll up to revisit the privacy transparency channel at anytime.
+				</h6>
+				<br>
+				<br>
+
+
+				<p style="font-size: 14pt;"><b>C.1</b> In my previous experiences with installing mobile apps from the
+					Google Play Store,
+					I often reviewed the privacy practice information disclosed on the
+					<b><em>privacy policy transparency channel</em></b> before deciding to install a mobile app.
+				</p>
+				<input type="radio" id="C1-Strongly-agree" value="1" name="C1"> Strongly agree
+				<br>
+				<input type="radio" id="C1-Somewhat-agree" value="2" name="C1"> Somewhat agree
+				<br>
+				<input type="radio" id="C1-Neither-agree-nor-disagree" value="3" name="C1"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C1-Somewhat-disagree" value="4" name="C1"> Somewhat disagree
+				<br>
+				<input type="radio" id="C1-Strongly-disagree" value="5" name="C1"> Strongly disagree
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.2</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					my privacy-sensitive information could be collected, used, and potentially shared (with other
+					parties)
+					by the Bumble mobile app (if I install and use it).</p>
+				<input type="radio" id="C2-Strongly-agree" value="1" name="C2"> Strongly agree
+				<br>
+				<input type="radio" id="C2-Somewhat-agree" value="2" name="C2"> Somewhat agree
+				<br>
+				<input type="radio" id="C2-Neither-agree-nor-disagree" value="3" name="C2"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C2-Somewhat-disagree" value="4" name="C2"> Somewhat disagree
+				<br>
+				<input type="radio" id="C2-Strongly-disagree" value="5" name="C2"> Strongly disagree
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.3</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the Bumble mobile app (if I install and use it) <b><em> may collect and use</em></b> the following
+					types of privacy-sensitive information
+					(Please select all that apply; if no option is applicable, please select “None of above”.):
+				</p>
+				<input type="checkbox" id="C3-Location" value="Location" name="C3"> Location
+				<br>
+				<input type="checkbox" id="C3-Personal" value="Personal info" name="C3"> Personal info (e.g., name,
+				email address, etc.)
+				<br>
+				<input type="checkbox" id="C3-Financial" value="Financial info" name="C3"> Financial info (e.g.,
+				purchase history, payment info, etc.)
+				<br>
+				<input type="checkbox" id="C3-Health" value="Health and fitness info" name="C3"> Health and fitness info
+				<br>
+				<input type="checkbox" id="C3-Messages" value="Messages" name="C3"> Messages (e.g., emails, SMS)
+				<br>
+				<input type="checkbox" id="C3-Photos" value="Photos and videos" name="C3"> Photos and videos
+				<br>
+				<input type="checkbox" id="C3-Audios" value="Audios" name="C3"> Audios
+				<br>
+				<input type="checkbox" id="C3-Files" value="Files" name="C3"> Files and docs stored on the device
+				<br>
+				<input type="checkbox" id="C3-Calendar" value="Calendar" name="C3"> Calendar events
+				<br>
+				<input type="checkbox" id="C3-Contact" value="Contact list" name="C3"> Contact list
+				<br>
+				<input type="checkbox" id="C3-Activity" value="App activity" name="C3"> App activity (e.g., in-app
+				search history and interaction, etc.)
+				<br>
+				<input type="checkbox" id="C3-Browsing" value="Web browsing history" name="C3"> Web browsing history
+				<br>
+				<input type="checkbox" id="C3-Performance" value="App info and performance" name="C3"> App info and
+				performance (e.g., app crash log)
+				<br>
+				<input type="checkbox" id="C3-Identifiers" value="Device or other identifiers" name="C3"> Device or
+				other identifiers (e.g., phone number, etc.)
+				<br>
+				<input type="checkbox" id="C3-Others" value="Others" name="C3"> Others:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px;">
+					<input class="mdl-textfield__input" type="text" id="C3-Specify-Others" name="C3">
+					<label class="mdl-textfield__label" for="C3-Specify-Others">please specify</label>
+				</div>
+				<br>
+				<input type="checkbox" id="C3-None" value="None" name="C3"> None of above
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.4</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the Bumble mobile app (if I install and use it) <b><em>may share (with other parties)</em></b> the
+					following types of privacy-sensitive information
+					(Please select all that apply; if no option is applicable, please select “None of above”.):
+				</p>
+				<input type="checkbox" id="C4-Location" value="Location" name="C4"> Location
+				<br>
+				<input type="checkbox" id="C4-Personal" value="Personal info" name="C4"> Personal info (e.g., name,
+				email address, etc.)
+				<br>
+				<input type="checkbox" id="C4-Financial" value="Financial info" name="C4"> Financial info (e.g.,
+				purchase history, payment info, etc.)
+				<br>
+				<input type="checkbox" id="C4-Health" value="Health and fitness info" name="C4"> Health and fitness info
+				<br>
+				<input type="checkbox" id="C4-Messages" value="Messages" name="C4"> Messages (e.g., emails, SMS)
+				<br>
+				<input type="checkbox" id="C4-Photos" value="Photos and videos" name="C4"> Photos and videos
+				<br>
+				<input type="checkbox" id="C4-Audios" value="Audios" name="C4"> Audios
+				<br>
+				<input type="checkbox" id="C4-Files" value="Files" name="C4"> Files and docs stored on the device
+				<br>
+				<input type="checkbox" id="C4-Calendar" value="Calendar" name="C4"> Calendar events
+				<br>
+				<input type="checkbox" id="C4-Contact" value="Contact list" name="C4"> Contact list
+				<br>
+				<input type="checkbox" id="C4-Activity" value="App activity" name="C4"> App activity (e.g., in-app
+				search history and interaction, etc.)
+				<br>
+				<input type="checkbox" id="C4-Browsing" value="Web browsing history" name="C4"> Web browsing history
+				<br>
+				<input type="checkbox" id="C4-Performance" value="App info and performance" name="C4"> App info and
+				performance (e.g., app crash log)
+				<br>
+				<input type="checkbox" id="C4-Identifiers" value="Device or other identifiers" name="C4"> Device or
+				other identifiers (e.g., phone number, etc.)
+				<br>
+				<input type="checkbox" id="C4-Others" value="Others" name="C4"> Others:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px;">
+					<input class="mdl-textfield__input" type="text" id="C4-Specify-Others" name="C4">
+					<label class="mdl-textfield__label" for="C4-Specify-Others">please specify</label>
+				</div>
+				<br>
+				<input type="checkbox" id="C4-None" value="None" name="C4"> None of above
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.5</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the Bumble mobile app (if I install and use it) <b><em>may use</em></b> my privacy-sensitive
+					information <b><em>for the following purposes</em></b>
+					(Please select all that apply; if no option is applicable, please select “None of above”.):
+				</p>
+				<input type="checkbox" id="C5-Advertising" value="Advertising or marketing" name="C5"> Advertising or
+				marketing
+				<br>
+				<input type="checkbox" id="C5-Fraud" value="Fraud prevention and security" name="C5"> Fraud prevention
+				and security
+				<br>
+				<input type="checkbox" id="C5-Compliance" value="Regulation Compliance" name="C5"> Regulation compliance
+				<br>
+				<input type="checkbox" id="C5-Management" value="Account management" name="C5"> Account management
+				<br>
+				<input type="checkbox" id="C5-Functionality" value="App functionality" name="C5"> App functionality
+				<br>
+				<input type="checkbox" id="C5-Analytics" value="Data Analytics" name="C5"> Data analytics
+				<br>
+				<input type="checkbox" id="C5-Personalization" value="Personalization" name="C5"> Personalization
+				<br>
+				<input type="checkbox" id="C5-communications" value="Developer communications" name="C5"> Developer
+				communications
+				<br>
+				<!-- <input type="checkbox" id="C5-testing" value="App testing and improvement" name="C5">  App testing and improvement
+					<br> -->
+				<input type="checkbox" id="C5-Others" value="Others" name="C5"> Others:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px;">
+					<input class="mdl-textfield__input" type="text" id="C5-Specify-Others" name="C5">
+					<label class="mdl-textfield__label" for="C5-Specify-Others">please specify</label>
+				</div>
+				<br>
+				<input type="checkbox" id="C5-None" value="None" name="C5"> None of above
+				<br>
+				<br>
+				<br>
+
+
+				<p style="font-size: 14pt;"><b>C.6</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the following statements about the <b><em>data rights that I have</em></b> regarding my
+					privacy-sensitive information
+					collected by the Bumble mobile app (if I install and use it) are true
+					(Please select all that apply; if no option is applicable, please select “None of above”.):
+				</p>
+				<input type="checkbox" id="C6-access" value="right_access" name="C6"> I can access any privacy-sensitive
+				information collected by the app.
+				<br>
+				<input type="checkbox" id="C6-correct" value="right_correct" name="C6"> I can correct any inaccurate
+				privacy-sensitive information held by the app.
+				<br>
+				<input type="checkbox" id="C6-delete" value="right_delete" name="C6"> I can have my privacy-sensitive
+				information deleted.
+				<br>
+				<input type="checkbox" id="C6-restrict" value="right_restrict" name="C6"> I can restrict the processing
+				of my privacy-sensitive information.
+				<br>
+				<input type="checkbox" id="C6-portability" value="right_portability" name="C6"> I can request a copy of
+				my privacy-sensitive information and have it transferred to another service provider.
+				<br>
+				<input type="checkbox" id="C6-object" value="right_object" name="C6"> I can object to the processing of
+				my privacy-sensitive information.
+				<br>
+				<input type="checkbox" id="C6-intervention" value="right_intervention" name="C6"> I can request human
+				intervention in the decision-making process that involves my privacy-sensitive information.
+				<br>
+				<input type="checkbox" id="C6-compliant" value="right_compliant" name="C6"> I can lodge my compliant to
+				the supervising authority regarding any misuse of my privacy-sensitive information.
+				<br>
+				<input type="checkbox" id="C6-opt" value="right_opt" name="C6"> I can opt-out of the sale or sharing of
+				my privacy-sensitive information.
+				<br>
+				<input type="checkbox" id="C6-Others" value="Others" name="C6"> Others:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px;">
+					<input class="mdl-textfield__input" type="text" id="C6-Specify-Others" name="C6">
+					<label class="mdl-textfield__label" for="C6-Specify-Others">please specify</label>
+				</div>
+				<br>
+				<input type="checkbox" id="C6-None" value="None" name="C6"> None of above
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.7</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the following statements about the <b><em>storage or retention</em></b> of my privacy-sensitive
+					information
+					collected by the Bumble mobile app (if I install and use it) are true
+					(Please select all that apply; if no option is applicable, please select “None of above”.):
+				</p>
+				<input type="checkbox" id="C7-Location" value="Location" name="C7">
+				The storage location (e.g., on my smartphone, on the app’s remote server, or on a third-party server) is
+				provided to me.
+				<br>
+				<input type="checkbox" id="C7-Period" value="Period" name="C7">
+				The storage or retention period (e.g., six months, two years, or forever) is provided to me.
+				<br>
+				<input type="checkbox" id="C7-Criterion" value="criterion" name="C7">
+				The criterion for determining the storage or retention period is provided to me
+				(e.g., my privacy-sensitive information will be stored until my request is addressed by a service
+				representative).
+				<br>
+				<input type="checkbox" id="C7-Post" value="Post" name="C7">
+				The post-storage or retention period policy is provided to me (e.g., my privacy-sensitive information
+				will be completely deleted, partially deleted, or anonymized after the retention period).
+				<br>
+
+				<input type="checkbox" id="C7-Others" value="Others" name="C7"> Others:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px;">
+					<input class="mdl-textfield__input" type="text" id="C7-Specify-Others" name="C7">
+					<label class="mdl-textfield__label" for="C7-Specify-Others">please specify</label>
+				</div>
+				<br>
+				<input type="checkbox" id="C7-None" value="None" name="C7"> None of above
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.8</b>
+					Based on the privacy practices I learned purely from the <b><em>privacy policy transparency
+							channel</em></b>,
+					the collection, use, and potentially sharing (with other parties)
+					of my privacy-sensitive information by the Bumble mobile app (if I install and use it) <b><em>may
+							harm me</em></b>
+					by incurring some online risks such as restraining me from expressing my views (e.g., political
+					views)
+					free from worry, allowing attackers to steal my identity, and/or decreasing my chances of getting a
+					good job in the future.
+				</p>
+				<input type="radio" id="C8-Strongly-agree" value="1" name="C8"> Strongly agree
+				<br>
+				<input type="radio" id="C8-Somewhat-agree" value="2" name="C8"> Somewhat agree
+				<br>
+				<input type="radio" id="C8-Neither-agree-nor-disagree" value="3" name="C8"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C8-Somewhat-disagree" value="4" name="C8"> Somewhat disagree
+				<br>
+				<input type="radio" id="C8-Strongly-disagree" value="5" name="C8"> Strongly disagree
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.9</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the collection, use, and potentially sharing (with other parties)
+					of my privacy-sensitive information by the Bumble mobile app (if I install and use it) <b><em>may
+							harm me</em></b> by
+					incurring some physical risks (e.g., stalking and burglary) to me or my family.</p>
+				<input type="radio" id="C9-Strongly-agree" value="1" name="C9"> Strongly agree
+				<br>
+				<input type="radio" id="C9-Somewhat-agree" value="2" name="C9"> Somewhat agree
+				<br>
+				<input type="radio" id="C9-Neither-agree-nor-disagree" value="3" name="C9"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C9-Somewhat-disagree" value="4" name="C9"> Somewhat disagree
+				<br>
+				<input type="radio" id="C9-Strongly-disagree" value="5" name="C9"> Strongly disagree
+				<br>
+				<br>
+				<br>
+
+
+				<p style="font-size: 14pt;"><b>C.10</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the collection, use, and potentially sharing (with other parties)
+					of my privacy-sensitive information by the Bumble mobile app (if I install and use it) <b><em>may
+							benefit me</em></b>
+					by providing me with the customized service tailored to my preferences or needs. </p>
+				<input type="radio" id="C10-Strongly-agree" value="1" name="C10"> Strongly agree
+				<br>
+				<input type="radio" id="C10-Somewhat-agree" value="2" name="C10"> Somewhat agree
+				<br>
+				<input type="radio" id="C10-Neither-agree-nor-disagree" value="3" name="C10"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C10-Somewhat-disagree" value="4" name="C10"> Somewhat disagree
+				<br>
+				<input type="radio" id="C10-Strongly-disagree" value="5" name="C10"> Strongly disagree
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.11</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					the collection, use, and potentially sharing (with other parties)
+					of my privacy-sensitive information by the Bumble mobile app (if I install and use it) <b><em>may
+							benefit me</em></b>
+					by providing me with the enhanced online security protection such as better fraud detection or
+					prevention. </p>
+				<input type="radio" id="C11-Strongly-agree" value="1" name="C11"> Strongly agree
+				<br>
+				<input type="radio" id="C11-Somewhat-agree" value="2" name="C11"> Somewhat agree
+				<br>
+				<input type="radio" id="C11-Neither-agree-nor-disagree" value="3" name="C11"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C11-Somewhat-disagree" value="4" name="C11"> Somewhat disagree
+				<br>
+				<input type="radio" id="C11-Strongly-disagree" value="5" name="C11"> Strongly disagree
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.12</b> Based on the privacy practices I learned purely from the
+					<b><em>privacy policy transparency channel</em></b>,
+					I am concerned with the overall privacy risks associated with installing and using the Bumble mobile
+					app. </p>
+				<input type="radio" id="C12-Strongly-agree" value="1" name="C12"> Strongly agree
+				<br>
+				<input type="radio" id="C12-Somewhat-agree" value="2" name="C12"> Somewhat agree
+				<br>
+				<input type="radio" id="C12-Neither-agree-nor-disagree" value="3" name="C12"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C12-Somewhat-disagree" value="4" name="C12"> Somewhat disagree
+				<br>
+				<input type="radio" id="C12-Strongly-disagree" value="5" name="C12"> Strongly disagree
+				<br>
+				<br>
+				Please explain your answer to Question C.12 with at least 15 words and with high quality:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 700px;">
+					<input class="mdl-textfield__input" type="text" id="C12-open-question" name="C12" onkeyup="wordCount('C12')">
+					<label class="mdl-textfield__label" for="C12-open-question">Enter text here</label>
+					<p id="C12-count" style="font-size: small;">Word Count: 0</p>
+				</div>
+				<br>
+				<br>
+				<br>
+
+				<p style="font-size: 14pt;"><b>C.13</b> The <b><em>privacy policy transparency channel </b></em>
+					should be improved in some ways to help me better understand the privacy practices of the Bumble
+					mobile app
+					and better estimate the privacy risks associated with installing and using the app.</p>
+				<input type="radio" id="C13-Strongly-agree" value="1" name="C13"> Strongly agree
+				<br>
+				<input type="radio" id="C13-Somewhat-agree" value="2" name="C13"> Somewhat agree
+				<br>
+				<input type="radio" id="C13-Neither-agree-nor-disagree" value="3" name="C13"> Neither agree nor disagree
+				<br>
+				<input type="radio" id="C13-Somewhat-disagree" value="4" name="C13"> Somewhat disagree
+				<br>
+				<input type="radio" id="C13-Strongly-disagree" value="5" name="C13"> Strongly disagree
+				<br>
+				<br>
+				Please explain your answer to Question C.13 with at least 15 words and with high quality:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 700px;">
+					<input class="mdl-textfield__input" type="text" id="C13-open-question" name="C13" onkeyup="wordCount('C13')">
+					<label class="mdl-textfield__label" for="C13-open-question">Enter text here</label>
+					<p id="C13-count" style="font-size: small;">Word Count: 0</p>
+				</div>
+				<br>
+				<br>
+				<br>
+
+			</div>
+
+			<hr style="width:90%; margin: auto;" />
+			<h5 style="text-align: center;">
+				<script>
+					channelOrder = localStorage.getItem('channelOrder').split(',');
+					channelIndex = channelOrder.indexOf('privacy_policy');
+					if (channelIndex == 0) {
+						document.write("In the next step, you will be presented with the second privacy transparency channel to further learn about the app's privacy practices.")
+					} else if (channelIndex == 1) {
+						document.write("In the next step, you will be presented with the last privacy transparency channel to further learn about the app's privacy practices.")
+					} else {
+						document.write("You now finished interacting with all three privacy transparency channels.<br> In the next step, you will answer a set of questions about your overall opinions about the three channels.")
+					} 
+				</script>
+			</h5>
+			<div style="padding-bottom: 25px; text-align: center;">
+				<button onclick="submit()"
+					class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Next</button>
+			</div>
+		</div>
+
+
+
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function () {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.maxHeight) {
+						content.style.maxHeight = null;
+					} else {
+						content.style.maxHeight = content.scrollHeight + "px";
+					}
+				});
+			}
+		</script>
+
+</body>
+
+</html>

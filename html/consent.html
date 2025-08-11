@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<meta charset="utf-8"/>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css'>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css" />
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+		<script src="../js/consent.js"></script>
+		<!-- Creates a random user ID (1 to 100,000) so that we can properly -->
+		<!-- sort each table by user ID. -->
+		<script>
+			if (localStorage.getItem('ID') === null) {
+				var UserID = Math.floor(Math.random() * 100000)
+				localStorage.setItem('ID', UserID)
+			}
+		</script>
+
+		<style>
+		body {
+			font-size: 17px;
+		}
+		#cs_div {
+			text-align: center; 
+			line-height: 200px; 
+			height: 150px; 
+		}
+		#cs_img
+		{
+			vertical-align: middle;
+		}
+		</style>
+	</head>
+
+		<div class="container" id='cs_div' style="background-color: #eee; ">
+		<img id = 'cs_img' src="../cs.png" alt="school logo" width="500" height = "200"><br>
+		</div>
+
+		<div class="container" style="background-color: white;">
+			<div class="chat-box-tray">
+			  <div class="container" style="max-width: 960px;">
+
+<body style="background-color: gray;">
+	<br> 
+
+<h3 style="text-align: center;"><b>Informed Consent Form</b></h3>
+<h4 style="text-align: center;">(Approved by the Human Subjects Team in Our University)</h4>
+<br>
+<b>PURPOSE OF THE RESEARCH:</b>
+<br> 
+This study aims to explore Android users’ understanding of mobile app’s privacy practices after 
+interacting with three privacy transparency channels on Google Play Store. 
+In this study, three transparency channels will be provided one at a time on this website; 
+you will be asked to interact with them, read the information carefully, and answer some related questions. 
+Only anonymized data is collected in this study.
+ Collected data might be used in the future by researchers from our university. 
+<br>
+<br> 
+
+<b> EXPLANATION OF PROCEDURES/METHODS TO BE USED:</b>
+<br>
+You will take on the role of a mobile app user looking to install a new app from the Google Play Store. 
+You'll be presented with an interface that displays app information, 
+closely mimicking the typical experience of browsing and installing an app from the Google Play Store. 
+You will be guided through the app’s fundamentals and will be asked to answer a few preliminary questions before our main study. 
+In the main study, you'll engage with three different privacy transparency channels of the app, one at a time. Following each interaction, 
+you will be asked to share your understanding of the privacy transparency of the app and indicate if you have any concerns. 
+After completing three rounds of interactions, you will answer some other questions about your overall impression and experience in this study.
+
+<br>
+<br>
+It takes around 50 minutes to complete the study.
+<br>
+<br>
+We only compensate workers who complete the entire study, 
+including completing the three interactions and answering all the questions. 
+You should see your confirmation page that you completed the entire study with your Prolific ID after the demographic questions. 
+We will use your Prolific ID to compensate you if you completed the entire study with high quality responses. 
+We will review your answers to check their quality.
+<br>
+<br> 
+
+<b> RISKS/ DISCOMFORTS:</b><br>
+You will not be asked to submit any sensitive information. 
+There is no risk or discomfort for participating in this study.  
+<br>
+<br> 
+
+<b> BENEFITS:</b><br> 
+Although it may not directly benefit you, 
+this study will improve users' privacy protection and transparency in general. 
+Research like this usually pushes the industry and legislative bodies to make online services more privacy friendly.
+<br>
+<br> 
+
+<b> VOLUNTARY PARTICIPATION AND RIGHT TO WITHDRAW:</b>  
+<br> 
+Your participation in this research is voluntary. 
+If you decide to participate in the study, you may withdraw your consent and stop completing your interaction with the website at any time. 
+To withdraw, you can simply close this page and leave the website; in such a case, you will not receive the monetary compensation.
+<br>
+<br> 
+
+<b> CIRCUMSTANCES THAT COULD LEAD US TO END YOUR PARTICIPATION:</b>  
+<br> 
+We may decide to end your participation if you are not closely following the instructions. 
+<br>
+<br> 
+
+<b> CONFIDENTIALITY:</b>  
+<br> 
+We will not collect any identifiable or confidential information about you. 
+We will ask for your Prolific ID to compensate you. 
+Collected data will be encrypted and stored in a secure format. 
+Information obtained from you for this study will be treated as confidential to the extent allowed by law. 
+Research information that related to you may be shared with the xxx (removed to avoid anonymity breach) Human Subjects Team and others who are responsible for ensuring compliance with laws and regulations related to research. 
+<br>
+<br> 
+
+<b> COMPENSATION:</b>  
+<br> 
+We will compensate you with $8 USD if your answers were complete and relevant. 
+We will pay you $2 USD as an additional bonus if your answers are high quality. 
+Payments are made via Prolific.  
+<br>
+<br> 
+
+<b> CONTACT INFORMATION:</b>  
+<br> 
+If you have any questions about this research, you may contact: xxx (removed to avoid anonymity breach). 
+<br>
+If you have any questions about your rights as a participant in this study or any concerns or complaints, please contact the Human Subject Team at xxx (removed to avoid anonymity breach). 
+
+<br>
+<br> 
+
+
+</div>
+</div>
+</div>
+<div class="container"style="background-color: white;">	<br>
+	<div class="chat-box-tray">
+		<div class="container" style="max-width: 960px;">
+			<b>Your answer to the question below acknowledges that you have read the information stated and willingly agree to this consent form.</b>
+			<br>
+			<input type="radio" id="yes" name="consent" value="I agree"> I Agree
+			<br>
+			<input type="radio" id="no" name="consent" value="I disagree"> I Disagree
+
+		<br>
+		<br>
+<b>Your answers to the next three questions should be consistent with your answers in Prolific</b>
+<br><br>
+Are you at or over the age of 18?
+		<br>
+  		<input type="radio" id="yes" name="age" value="nes"> Yes
+  		<br>
+  		<input type="radio" id="no" name="age" value="no"> No
+		<br>
+		<br>
+Do you reside in the United States?
+		<br>
+  		<input type="radio" id="yes" name="us" value="yes"> Yes
+  		<br>
+  		<input type="radio" id="no" name="us" value="no"> No
+		<br>
+		<br>
+
+Have you ever used a mobile phone with the Android system?
+		<br>
+  		<input type="radio" id="yes" name="android" value="yes"> Yes
+  		<br>
+  		<input type="radio" id="no" name="android" value="no"> No
+		<br>
+		<br>
+		</form>
+
+	<p>
+		By clicking on the “Next” button on this webpage, you indicate that (1) you voluntarily agree to participate in this study, (2) you are at or over the age of 18, (3) you are located in the United States, and (4) you have used a mobile phone with the Android system. You have not waived any legal rights you otherwise would have as a participant in a research study. 
+
+	</p>
+			<div style="padding-bottom: 25px; text-align: center;">
+				<button onclick="goToDef()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Next</button>
+			</div>
+
+		</div>
+		</div>
+		</div>
+	</body>
+</html>

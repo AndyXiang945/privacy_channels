@@ -1,0 +1,838 @@
+<DOCTYPE! html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="../js/post_interactions.js"></script>
+      
+
+		<link rel="stylesheet" href="../html/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css" />
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <style>
+            p {
+                font-size: 14pt;
+            }
+            * {
+            font-family:  Arial;
+            }
+        </style>
+
+
+	<head>
+		<body>
+
+		<div class="container" style="max-width: 960px; padding: 15px; font-size: 14pt;">
+            <h4 style="text-align: center;">
+                Please answer the following questions (D.1-D.6) based on your interactions with the three privacy transparency channels for the 
+                <script>
+                    currentApp = localStorage.getItem('assigned_app');
+                    document.write(currentApp)
+                </script>
+                mobile app.
+            </h4>
+            <h6 style="text-align: center;">
+                *Please DO NOT refresh or close the current page, or go back to the previous page until you have completed the whole study.
+				You will see the "Congratulations..." confirmation page at the end indicating your completion of the study.*
+            </h6>
+            <br>
+            <br>
+			<p><b>D.1</b> 
+                Please rank the three privacy transparency channels in order of the <b><em>amount of information</em></b> they provided about the privacy practices of the 
+                <script>
+                    currentApp = localStorage.getItem('assigned_app');
+                    document.write(currentApp)
+                </script>
+                mobile app
+                (1=the channel with the largest amount of information, 3=the channel with the smallest amount of information).
+            </p>
+            <table style="width:80%; table-layout: fixed; font-size: 14pt;">
+                <tr>
+                    <td>Data safety:</td>
+                    <td><input type="radio" id="D1-Data_Safety-ranking-1" value="1" name="D1-Data_Safety-ranking"> 1 </td>
+                    <td><input type="radio" id="D1-Data_Safety-ranking-2" value="2" name="D1-Data_Safety-ranking"> 2 </td>
+                    <td><input type="radio" id="D1-Data_Safety-ranking-3" value="3" name="D1-Data_Safety-ranking"> 3 </td>
+                </tr>
+
+                <tr>
+                    <td>Privacy policy:</td>
+                    <td><input type="radio" id="D1-Privacy_Policy-ranking-1" value="1" name="D1-Privacy_Policy-ranking"> 1 </td>
+                    <td><input type="radio" id="D1-Privacy_Policy-ranking-2" value="2" name="D1-Privacy_Policy-ranking"> 2</td>
+                    <td><input type="radio" id="D1-Privacy_Policy-ranking-3" value="3" name="D1-Privacy_Policy-ranking"> 3</td>
+                </tr>
+
+                <tr>
+                    <td>Permission manifest:</td>
+                    <td><input type="radio" id="D1-Permission_Manifest-ranking-1" value="1" name="D1-Permission_Manifest-ranking"> 1 </td>
+                    <td><input type="radio" id="D1-Permission_Manifest-ranking-2" value="2" name="D1-Permission_Manifest-ranking"> 2</td>
+                    <td><input type="radio" id="D1-Permission_Manifest-ranking-3" value="3" name="D1-Permission_Manifest-ranking"> 3</td>
+                </tr>
+            </table>
+            <br>
+            <p>Click <a onclick="reset('D1')"><u>here</u></a> to reset your selections.</p>
+            <br>
+                Please explain your answer to Question D.1 with at least 15 words and with high quality (in addition, you can also indicate if some of those channels are tied in this ranking):  
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style = "width: 700px;">
+                    <input class="text-input mdl-textfield__input" type="text" id="D1-open-question" name="D1" onkeyup="wordCount('D1')">
+                    <label class="mdl-textfield__label" for="D1-open-question">Enter text here</label>
+                    <p id="D1-count" style="font-size: small;">Word Count: 0</p>
+                </div>
+           <br>
+           <br>
+           <br>
+
+
+           <p><b>D.2</b> 
+            Please rank the three privacy transparency channels in order of the <b><em>clarity of the information </em></b> they provided about the privacy practices of the 
+            <script>
+                currentApp = localStorage.getItem('assigned_app');
+                document.write(currentApp)
+            </script>
+            mobile app
+            (1=the channel with the best information clarity, 3=the channel with worst information clarity).
+            </p>
+            <table style="width:80%; table-layout: fixed; font-size: 14pt;">
+                <tr>
+                    <td>Data safety:</td>
+                    <td><input type="radio" id="D2-Data_Safety-ranking-1" value="1" name="D2-Data_Safety-ranking"> 1 </td>
+                    <td><input type="radio" id="D2-Data_Safety-ranking-2" value="2" name="D2-Data_Safety-ranking"> 2</td>
+                    <td><input type="radio" id="D2-Data_Safety-ranking-3" value="3" name="D2-Data_Safety-ranking"> 3</td>
+                </tr>
+
+                <tr>
+                    <td>Privacy policy:</td>
+                    <td><input type="radio" id="D2-Privacy_Policy-ranking-1" value="1" name="D2-Privacy_Policy-ranking"> 1 </td>
+                    <td><input type="radio" id="D2-Privacy_Policy-ranking-2" value="2" name="D2-Privacy_Policy-ranking"> 2</td>
+                    <td><input type="radio" id="D2-Privacy_Policy-ranking-3" value="3" name="D2-Privacy_Policy-ranking"> 3</td>
+                </tr>
+
+                <tr>
+                    <td>Permission manifest:</td>
+                    <td><input type="radio" id="D2-Permission_Manifest-ranking-1" value="1" name="D2-Permission_Manifest-ranking"> 1 </td>
+                    <td><input type="radio" id="D2-Permission_Manifest-ranking-2" value="2" name="D2-Permission_Manifest-ranking"> 2</td>
+                    <td><input type="radio" id="D2-Permission_Manifest-ranking-3" value="3" name="D2-Permission_Manifest-ranking"> 3</td>
+                </tr>
+            </table>
+            <br>
+            <p>Click <a onclick="reset('D2')"><u>here</u></a> to reset your selections.</p>
+                <br>
+                Please explain your answer to Question D.2 with at least 15 words and with high quality (in addition, you can also indicate if some of those channels are tied in this ranking):  
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style = "width: 700px;">
+                    <input class="mdl-textfield__input" type="text" id="D2-open-question" name="D2" onkeyup="wordCount('D2')">
+                    <label class="mdl-textfield__label" for="D2-open-question">Enter text here</label>
+                    <p id="D2-count" style="font-size: small;">Word Count: 0</p>
+                </div>
+            <br>
+            <br>
+            <br>
+
+       <!-- <p><b>D.3</b> 
+        Please rank the three privacy transparency channels in order of the <b><em>simplicity of their user interfaces </em></b> in providing the privacy practices of the 
+        <script>
+            currentApp = localStorage.getItem('assigned_app');
+            document.write(currentApp)
+        </script> 
+        mobile app
+        (1=the simplest channel, 3=the most complex channel).
+        </p>
+        <table style="width:80%; table-layout: fixed; font-size: 14pt;">
+            <tr>
+                <td>Data safety:</td>
+                <td><input type="radio" id="D3-Data_Safety-ranking-1" value="1" name="D3-Data_Safety-ranking"> 1 </td>
+                <td><input type="radio" id="D3-Data_Safety-ranking-2" value="2" name="D3-Data_Safety-ranking"> 2</td>
+                <td><input type="radio" id="D3-Data_Safety-ranking-3" value="3" name="D3-Data_Safety-ranking"> 3</td>
+            </tr>
+
+            <tr>
+                <td>Privacy policy:</td>
+                <td><input type="radio" id="D3-Privacy_Policy-ranking-1" value="1" name="D3-Privacy_Policy-ranking"> 1 </td>
+                <td><input type="radio" id="D3-Privacy_Policy-ranking-2" value="2" name="D3-Privacy_Policy-ranking"> 2</td>
+                <td><input type="radio" id="D3-Privacy_Policy-ranking-3" value="3" name="D3-Privacy_Policy-ranking"> 3</td>
+            </tr>
+
+            <tr>
+                <td>Permission manifest:</td>
+                <td><input type="radio" id="D3-Permission_Manifest-ranking-1" value="1" name="D3-Permission_Manifest-ranking"> 1 </td>
+                <td><input type="radio" id="D3-Permission_Manifest-ranking-2" value="2" name="D3-Permission_Manifest-ranking"> 2</td>
+                <td><input type="radio" id="D3-Permission_Manifest-ranking-3" value="3" name="D3-Permission_Manifest-ranking"> 3</td>
+            </tr>
+        </table>
+        <br>
+        <p>Click <a onclick="reset('D3')"><u>here</u></a> to reset your selections.</p>
+            <br>
+            Please explain your answer to Question D.3 with at least 15 words and with high quality (in addition, you can also indicate if some of those channels are tied in this ranking):  
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style = "width: 700px;">
+                <input class="mdl-textfield__input" type="text" id="D3-open-question" name="D3">
+                <label class="mdl-textfield__label" for="D3-open-question">Enter text here</label>
+            </div>
+        <br>
+        <br>
+        <br> -->
+
+        <p><b>D.3</b> 
+            Please rank the three privacy transparency channels in order of the <b><em>intuitiveness of their user interfaces </em></b> in providing the privacy practices of the 
+            <script>
+                currentApp = localStorage.getItem('assigned_app');
+                document.write(currentApp)
+            </script> 
+            mobile app
+            (1=the most intuitive channel, 3=the least intuitive channel).
+            </p>
+            
+            <table style="width:80%; table-layout: fixed; font-size: 14pt;">
+                <tr>
+                    <td>Data safety:</td>
+                    <td><input type="radio" id="D3-Data_Safety-ranking-1" value="1" name="D3-Data_Safety-ranking"> 1 </td>
+                    <td><input type="radio" id="D3-Data_Safety-ranking-2" value="2" name="D3-Data_Safety-ranking"> 2</td>
+                    <td><input type="radio" id="D3-Data_Safety-ranking-3" value="3" name="D3-Data_Safety-ranking"> 3</td>
+                </tr>
+
+                <tr>
+                    <td>Privacy policy:</td>
+                    <td><input type="radio" id="D3-Privacy_Policy-ranking-1" value="1" name="D3-Privacy_Policy-ranking"> 1 </td>
+                    <td><input type="radio" id="D3-Privacy_Policy-ranking-2" value="2" name="D3-Privacy_Policy-ranking"> 2</td>
+                    <td><input type="radio" id="D3-Privacy_Policy-ranking-3" value="3" name="D3-Privacy_Policy-ranking"> 3</td>
+                </tr>
+
+                <tr>
+                    <td>Permission manifest:</td>
+                    <td><input type="radio" id="D3-Permission_Manifest-ranking-1" value="1" name="D3-Permission_Manifest-ranking"> 1 </td>
+                    <td><input type="radio" id="D3-Permission_Manifest-ranking-2" value="2" name="D3-Permission_Manifest-ranking"> 2</td>
+                    <td><input type="radio" id="D3-Permission_Manifest-ranking-3" value="3" name="D3-Permission_Manifest-ranking"> 3</td>
+                </tr>
+            </table>
+            <br>
+            <p>Click <a onclick="reset('D3')"><u>here</u></a> to reset your selections.</p>
+                <br>
+                Please explain your answer to Question D.3 with at least 15 words and with high quality (in addition, you can also indicate if some of those channels are tied in this ranking):  
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style = "width: 700px;">
+                    <input class="mdl-textfield__input" type="text" id="D3-open-question" name="D3" onkeyup="wordCount('D3')">
+                    <label class="mdl-textfield__label" for="D3-open-question">Enter text here</label>
+                    <p id="D3-count" style="font-size: small;">Word Count: 0</p>
+                </div>
+            <br>
+            <br>
+            <br>
+
+
+            <p><b>D.4</b> 
+                Please rank the three privacy transparency channels in order of the their <b><em>overall effectiveness </em></b> in 
+                helping you understand the privacy practices of the 
+                <script>
+                    currentApp = localStorage.getItem('assigned_app');
+                    document.write(currentApp)
+                </script>
+                mobile app and estimate the privacy risks associated with installing and using it
+                (1=the most effective channel, 3=the least effective channel).
+                </p>
+                <table style="width:80%; table-layout: fixed; font-size: 14pt;">
+                    <tr>
+                        <td>Data safety:</td>
+                        <td><input type="radio" id="D4-Data_Safety-ranking-1" value="1" name="D4-Data_Safety-ranking"> 1 </td>
+                        <td><input type="radio" id="D4-Data_Safety-ranking-2" value="2" name="D4-Data_Safety-ranking"> 2</td>
+                        <td><input type="radio" id="D4-Data_Safety-ranking-3" value="3" name="D4-Data_Safety-ranking"> 3</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Privacy policy:</td>
+                        <td><input type="radio" id="D4-Privacy_Policy-ranking-1" value="1" name="D4-Privacy_Policy-ranking"> 1 </td>
+                        <td><input type="radio" id="D4-Privacy_Policy-ranking-2" value="2" name="D4-Privacy_Policy-ranking"> 2</td>
+                        <td><input type="radio" id="D4-Privacy_Policy-ranking-3" value="3" name="D4-Privacy_Policy-ranking"> 3</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Permission manifest:</td>
+                        <td><input type="radio" id="D4-Permission_Manifest-ranking-1" value="1" name="D4-Permission_Manifest-ranking"> 1 </td>
+                        <td><input type="radio" id="D4-Permission_Manifest-ranking-2" value="2" name="D4-Permission_Manifest-ranking"> 2</td>
+                        <td><input type="radio" id="D4-Permission_Manifest-ranking-3" value="3" name="D4-Permission_Manifest-ranking"> 3</td>
+                    </tr>
+                </table>
+                <br>
+                <p>Click <a onclick="reset('D4')"><u>here</u></a> to reset your selections.</p>
+                    <br>
+                    Please explain your answer to Question D.4 with at least 15 words and with high quality (in addition, you can also indicate if some of those channels are tied in this ranking):  
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style = "width: 700px;">
+                        <input class="mdl-textfield__input" type="text" id="D4-open-question" name="D4" onkeyup="wordCount('D4')">
+                        <label class="mdl-textfield__label" for="D4-open-question">Enter text here</label>
+                        <p id="D4-count" style="font-size: small;">Word Count: 0</p>
+                        
+                    </div>
+                <br>
+                <br>
+                <br>
+
+
+                <p><b>D.5</b> I hope that in the future the privacy transparency channels can be significantly improved 
+                    in the following ways to help me better understand the privacy practices of mobile apps 
+                    and better estimate the privacy risks associated with installing and using them 
+                    (Please select all that apply; if no option is applicable, please select “None of above”.):
+                </p>
+                    <input type="checkbox" id="D5-improve-1" value="D5-improve-1" name="D5">  
+                    Provide more and clearer information about an app’s privacy practices.
+                    <br>
+                    <input type="checkbox" id="D5-improve-2" value="D5-improve-2" name="D5">  
+                    Improve their user interfaces to present an app’s privacy practices more effectively.
+                    <br>
+                    <input type="checkbox" id="D5-improve-3" value="D5-improve-3" name="D5">  
+                    Provide a single interface to present their combined information about an app’s privacy practices. 
+                    <br>
+                    <input type="checkbox" id="D5-improve-4" value="D5-improve-4" name="D5">  
+                    Highlight the potential privacy risks associated with an app’s privacy practices.
+                    <br>
+                    <input type="checkbox" id="D5-improve-5" value="D5-improve-5" name="D5">  
+                    Make it mandatory for me to interact with them before allowing me to install an app.
+                    <br>
+                    <input type="checkbox" id="D5-Others" value="Others" name="D5"> Others:
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style = "width: 500px;">
+                        <input class="mdl-textfield__input" type="text" id="D5-Specify-Others" name="D5">
+                        <label class="mdl-textfield__label" for="D5-Specify-Others">please specify</label>
+                    </div>
+                    <br>
+                    <input type="checkbox" id="D5-None" value="None" name="D5"> None of above
+                <br>
+                <br>
+                <br>
+
+                <p><b>D.6</b> Other comments, suggestions, and/or concerns about the privacy transparency channels and/or this study? </b> 
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style = "width: 500px;">
+                    <input class="mdl-textfield__input" type="text" id="D6-open-question" name="D6">
+                    <label class="mdl-textfield__label" for="D6-open-question">Enter text here</label>
+                </div>
+                <br>
+                <br>
+                <br>
+    
+        <hr style="width:90%; margin: auto;" />
+        <h5 style="text-align: center;">
+            You now completed the main study procedure. 
+            In the final step, you will answer a set of demographic questions.
+        </h5>
+      <div class="button-tray">
+         <button onclick="submit()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Next</button>
+      </div>
+	</div>
+
+    <script>
+
+    window.onload = function() {
+
+        // **************** D1
+        var D1_DS_ranking1 = document.getElementById("D1-Data_Safety-ranking-1");
+        var D1_DS_ranking2 = document.getElementById("D1-Data_Safety-ranking-2");
+        var D1_DS_ranking3 = document.getElementById("D1-Data_Safety-ranking-3");
+
+        var D1_PP_ranking1 = document.getElementById("D1-Privacy_Policy-ranking-1");
+        var D1_PP_ranking2 = document.getElementById("D1-Privacy_Policy-ranking-2");
+        var D1_PP_ranking3 = document.getElementById("D1-Privacy_Policy-ranking-3");
+
+        var D1_PM_ranking1 = document.getElementById("D1-Permission_Manifest-ranking-1");
+        var D1_PM_ranking2 = document.getElementById("D1-Permission_Manifest-ranking-2");
+        var D1_PM_ranking3 = document.getElementById("D1-Permission_Manifest-ranking-3");
+
+        document.getElementById("D1-Data_Safety-ranking-1").addEventListener("click", D1_pickedDS_1);
+        document.getElementById("D1-Data_Safety-ranking-2").addEventListener("click", D1_pickedDS_2);
+        document.getElementById("D1-Data_Safety-ranking-3").addEventListener("click", D1_pickedDS_3);
+
+        document.getElementById("D1-Privacy_Policy-ranking-1").addEventListener("click", D1_pickedPP_1);
+        document.getElementById("D1-Privacy_Policy-ranking-2").addEventListener("click", D1_pickedPP_2);
+        document.getElementById("D1-Privacy_Policy-ranking-3").addEventListener("click", D1_pickedPP_3);
+
+        document.getElementById("D1-Permission_Manifest-ranking-1").addEventListener("click", D1_pickedPM_1);
+        document.getElementById("D1-Permission_Manifest-ranking-2").addEventListener("click", D1_pickedPM_2);
+        document.getElementById("D1-Permission_Manifest-ranking-3").addEventListener("click", D1_pickedPM_3);
+        
+        function D1_pickedDS_1() {
+            D1_DS_ranking2.disabled = true
+            D1_DS_ranking3.disabled = true
+
+            D1_PP_ranking1.disabled = true;
+            D1_PM_ranking1.disabled = true;
+        }
+        function D1_pickedDS_2() {
+            D1_DS_ranking1.disabled = true
+            D1_DS_ranking3.disabled = true
+
+            D1_PP_ranking2.disabled = true;
+            D1_PM_ranking2.disabled = true;
+        }
+        function D1_pickedDS_3() {
+            D1_DS_ranking1.disabled = true
+            D1_DS_ranking2.disabled = true
+
+            D1_PP_ranking3.disabled = true;
+            D1_PM_ranking3.disabled = true;
+        }
+
+
+        function D1_pickedPP_1() {
+            D1_PP_ranking2.disabled = true
+            D1_PP_ranking3.disabled = true
+
+            D1_DS_ranking1.disabled = true;
+            D1_PM_ranking1.disabled = true;
+        }
+        function D1_pickedPP_2() {
+            D1_PP_ranking1.disabled = true
+            D1_PP_ranking3.disabled = true
+
+            D1_DS_ranking2.disabled = true;
+            D1_PM_ranking2.disabled = true;
+        }
+        function D1_pickedPP_3() {
+            D1_PP_ranking1.disabled = true
+            D1_PP_ranking2.disabled = true
+
+            D1_DS_ranking3.disabled = true;
+            D1_PM_ranking3.disabled = true;
+        }
+
+
+        function D1_pickedPM_1() {
+            D1_PM_ranking2.disabled = true
+            D1_PM_ranking3.disabled = true
+
+            D1_DS_ranking1.disabled = true;
+            D1_PP_ranking1.disabled = true;
+        }
+        function D1_pickedPM_2() {
+            D1_PM_ranking1.disabled = true
+            D1_PM_ranking3.disabled = true
+
+            D1_DS_ranking2.disabled = true;
+            D1_PP_ranking2.disabled = true;
+        }
+        function D1_pickedPM_3() {
+            D1_PM_ranking2.disabled = true
+            D1_PM_ranking1.disabled = true
+
+            D1_DS_ranking3.disabled = true;
+            D1_PP_ranking3.disabled = true;
+        }
+
+
+
+        // **************** D2
+        var D2_DS_ranking1 = document.getElementById("D2-Data_Safety-ranking-1");
+        var D2_DS_ranking2 = document.getElementById("D2-Data_Safety-ranking-2");
+        var D2_DS_ranking3 = document.getElementById("D2-Data_Safety-ranking-3");
+
+        var D2_PP_ranking1 = document.getElementById("D2-Privacy_Policy-ranking-1");
+        var D2_PP_ranking2 = document.getElementById("D2-Privacy_Policy-ranking-2");
+        var D2_PP_ranking3 = document.getElementById("D2-Privacy_Policy-ranking-3");
+
+        var D2_PM_ranking1 = document.getElementById("D2-Permission_Manifest-ranking-1");
+        var D2_PM_ranking2 = document.getElementById("D2-Permission_Manifest-ranking-2");
+        var D2_PM_ranking3 = document.getElementById("D2-Permission_Manifest-ranking-3");
+
+        document.getElementById("D2-Data_Safety-ranking-1").addEventListener("click", D2_pickedDS_1);
+        document.getElementById("D2-Data_Safety-ranking-2").addEventListener("click", D2_pickedDS_2);
+        document.getElementById("D2-Data_Safety-ranking-3").addEventListener("click", D2_pickedDS_3);
+
+        document.getElementById("D2-Privacy_Policy-ranking-1").addEventListener("click", D2_pickedPP_1);
+        document.getElementById("D2-Privacy_Policy-ranking-2").addEventListener("click", D2_pickedPP_2);
+        document.getElementById("D2-Privacy_Policy-ranking-3").addEventListener("click", D2_pickedPP_3);
+
+        document.getElementById("D2-Permission_Manifest-ranking-1").addEventListener("click", D2_pickedPM_1);
+        document.getElementById("D2-Permission_Manifest-ranking-2").addEventListener("click", D2_pickedPM_2);
+        document.getElementById("D2-Permission_Manifest-ranking-3").addEventListener("click", D2_pickedPM_3);
+        
+        function D2_pickedDS_1() {
+            D2_DS_ranking2.disabled = true
+            D2_DS_ranking3.disabled = true
+
+            D2_PP_ranking1.disabled = true;
+            D2_PM_ranking1.disabled = true;
+        }
+        function D2_pickedDS_2() {
+            D2_DS_ranking1.disabled = true
+            D2_DS_ranking3.disabled = true
+
+            D2_PP_ranking2.disabled = true;
+            D2_PM_ranking2.disabled = true;
+        }
+        function D2_pickedDS_3() {
+            D2_DS_ranking1.disabled = true
+            D2_DS_ranking2.disabled = true
+
+            D2_PP_ranking3.disabled = true;
+            D2_PM_ranking3.disabled = true;
+        }
+
+
+        function D2_pickedPP_1() {
+            D2_PP_ranking2.disabled = true
+            D2_PP_ranking3.disabled = true
+
+            D2_DS_ranking1.disabled = true;
+            D2_PM_ranking1.disabled = true;
+        }
+        function D2_pickedPP_2() {
+            D2_PP_ranking1.disabled = true
+            D2_PP_ranking3.disabled = true
+
+            D2_DS_ranking2.disabled = true;
+            D2_PM_ranking2.disabled = true;
+        }
+        function D2_pickedPP_3() {
+            D2_PP_ranking1.disabled = true
+            D2_PP_ranking2.disabled = true
+
+            D2_DS_ranking3.disabled = true;
+            D2_PM_ranking3.disabled = true;
+        }
+
+
+        function D2_pickedPM_1() {
+            D2_PM_ranking2.disabled = true
+            D2_PM_ranking3.disabled = true
+
+            D2_DS_ranking1.disabled = true;
+            D2_PP_ranking1.disabled = true;
+        }
+        function D2_pickedPM_2() {
+            D2_PM_ranking1.disabled = true
+            D2_PM_ranking3.disabled = true
+
+            D2_DS_ranking2.disabled = true;
+            D2_PP_ranking2.disabled = true;
+        }
+        function D2_pickedPM_3() {
+            D2_PM_ranking2.disabled = true
+            D2_PM_ranking1.disabled = true
+
+            D2_DS_ranking3.disabled = true;
+            D2_PP_ranking3.disabled = true;
+        }
+
+        // **************** D3
+        var D3_DS_ranking1 = document.getElementById("D3-Data_Safety-ranking-1");
+        var D3_DS_ranking2 = document.getElementById("D3-Data_Safety-ranking-2");
+        var D3_DS_ranking3 = document.getElementById("D3-Data_Safety-ranking-3");
+
+        var D3_PP_ranking1 = document.getElementById("D3-Privacy_Policy-ranking-1");
+        var D3_PP_ranking2 = document.getElementById("D3-Privacy_Policy-ranking-2");
+        var D3_PP_ranking3 = document.getElementById("D3-Privacy_Policy-ranking-3");
+
+        var D3_PM_ranking1 = document.getElementById("D3-Permission_Manifest-ranking-1");
+        var D3_PM_ranking2 = document.getElementById("D3-Permission_Manifest-ranking-2");
+        var D3_PM_ranking3 = document.getElementById("D3-Permission_Manifest-ranking-3");
+
+        document.getElementById("D3-Data_Safety-ranking-1").addEventListener("click", D3_pickedDS_1);
+        document.getElementById("D3-Data_Safety-ranking-2").addEventListener("click", D3_pickedDS_2);
+        document.getElementById("D3-Data_Safety-ranking-3").addEventListener("click", D3_pickedDS_3);
+
+        document.getElementById("D3-Privacy_Policy-ranking-1").addEventListener("click", D3_pickedPP_1);
+        document.getElementById("D3-Privacy_Policy-ranking-2").addEventListener("click", D3_pickedPP_2);
+        document.getElementById("D3-Privacy_Policy-ranking-3").addEventListener("click", D3_pickedPP_3);
+
+        document.getElementById("D3-Permission_Manifest-ranking-1").addEventListener("click", D3_pickedPM_1);
+        document.getElementById("D3-Permission_Manifest-ranking-2").addEventListener("click", D3_pickedPM_2);
+        document.getElementById("D3-Permission_Manifest-ranking-3").addEventListener("click", D3_pickedPM_3);
+        
+        function D3_pickedDS_1() {
+            D3_DS_ranking2.disabled = true
+            D3_DS_ranking3.disabled = true
+
+            D3_PP_ranking1.disabled = true;
+            D3_PM_ranking1.disabled = true;
+        }
+        function D3_pickedDS_2() {
+            D3_DS_ranking1.disabled = true
+            D3_DS_ranking3.disabled = true
+
+            D3_PP_ranking2.disabled = true;
+            D3_PM_ranking2.disabled = true;
+        }
+        function D3_pickedDS_3() {
+            D3_DS_ranking1.disabled = true
+            D3_DS_ranking2.disabled = true
+
+            D3_PP_ranking3.disabled = true;
+            D3_PM_ranking3.disabled = true;
+        }
+
+
+        function D3_pickedPP_1() {
+            D3_PP_ranking2.disabled = true
+            D3_PP_ranking3.disabled = true
+
+            D3_DS_ranking1.disabled = true;
+            D3_PM_ranking1.disabled = true;
+        }
+        function D3_pickedPP_2() {
+            D3_PP_ranking1.disabled = true
+            D3_PP_ranking3.disabled = true
+
+            D3_DS_ranking2.disabled = true;
+            D3_PM_ranking2.disabled = true;
+        }
+        function D3_pickedPP_3() {
+            D3_PP_ranking1.disabled = true
+            D3_PP_ranking2.disabled = true
+
+            D3_DS_ranking3.disabled = true;
+            D3_PM_ranking3.disabled = true;
+        }
+
+
+        function D3_pickedPM_1() {
+            D3_PM_ranking2.disabled = true
+            D3_PM_ranking3.disabled = true
+
+            D3_DS_ranking1.disabled = true;
+            D3_PP_ranking1.disabled = true;
+        }
+        function D3_pickedPM_2() {
+            D3_PM_ranking1.disabled = true
+            D3_PM_ranking3.disabled = true
+
+            D3_DS_ranking2.disabled = true;
+            D3_PP_ranking2.disabled = true;
+        }
+        function D3_pickedPM_3() {
+            D3_PM_ranking2.disabled = true
+            D3_PM_ranking1.disabled = true
+
+            D3_DS_ranking3.disabled = true;
+            D3_PP_ranking3.disabled = true;
+        }
+
+        // **************** D4
+        var D4_DS_ranking1 = document.getElementById("D4-Data_Safety-ranking-1");
+        var D4_DS_ranking2 = document.getElementById("D4-Data_Safety-ranking-2");
+        var D4_DS_ranking3 = document.getElementById("D4-Data_Safety-ranking-3");
+
+        var D4_PP_ranking1 = document.getElementById("D4-Privacy_Policy-ranking-1");
+        var D4_PP_ranking2 = document.getElementById("D4-Privacy_Policy-ranking-2");
+        var D4_PP_ranking3 = document.getElementById("D4-Privacy_Policy-ranking-3");
+
+        var D4_PM_ranking1 = document.getElementById("D4-Permission_Manifest-ranking-1");
+        var D4_PM_ranking2 = document.getElementById("D4-Permission_Manifest-ranking-2");
+        var D4_PM_ranking3 = document.getElementById("D4-Permission_Manifest-ranking-3");
+
+        document.getElementById("D4-Data_Safety-ranking-1").addEventListener("click", D4_pickedDS_1);
+        document.getElementById("D4-Data_Safety-ranking-2").addEventListener("click", D4_pickedDS_2);
+        document.getElementById("D4-Data_Safety-ranking-3").addEventListener("click", D4_pickedDS_3);
+
+        document.getElementById("D4-Privacy_Policy-ranking-1").addEventListener("click", D4_pickedPP_1);
+        document.getElementById("D4-Privacy_Policy-ranking-2").addEventListener("click", D4_pickedPP_2);
+        document.getElementById("D4-Privacy_Policy-ranking-3").addEventListener("click", D4_pickedPP_3);
+
+        document.getElementById("D4-Permission_Manifest-ranking-1").addEventListener("click", D4_pickedPM_1);
+        document.getElementById("D4-Permission_Manifest-ranking-2").addEventListener("click", D4_pickedPM_2);
+        document.getElementById("D4-Permission_Manifest-ranking-3").addEventListener("click", D4_pickedPM_3);
+        
+        function D4_pickedDS_1() {
+            D4_DS_ranking2.disabled = true
+            D4_DS_ranking3.disabled = true
+
+            D4_PP_ranking1.disabled = true;
+            D4_PM_ranking1.disabled = true;
+        }
+        function D4_pickedDS_2() {
+            D4_DS_ranking1.disabled = true
+            D4_DS_ranking3.disabled = true
+
+            D4_PP_ranking2.disabled = true;
+            D4_PM_ranking2.disabled = true;
+        }
+        function D4_pickedDS_3() {
+            D4_DS_ranking1.disabled = true
+            D4_DS_ranking2.disabled = true
+
+            D4_PP_ranking3.disabled = true;
+            D4_PM_ranking3.disabled = true;
+        }
+
+
+        function D4_pickedPP_1() {
+            D4_PP_ranking2.disabled = true
+            D4_PP_ranking3.disabled = true
+
+            D4_DS_ranking1.disabled = true;
+            D4_PM_ranking1.disabled = true;
+        }
+        function D4_pickedPP_2() {
+            D4_PP_ranking1.disabled = true
+            D4_PP_ranking3.disabled = true
+
+            D4_DS_ranking2.disabled = true;
+            D4_PM_ranking2.disabled = true;
+        }
+        function D4_pickedPP_3() {
+            D4_PP_ranking1.disabled = true
+            D4_PP_ranking2.disabled = true
+
+            D4_DS_ranking3.disabled = true;
+            D4_PM_ranking3.disabled = true;
+        }
+
+
+        function D4_pickedPM_1() {
+            D4_PM_ranking2.disabled = true
+            D4_PM_ranking3.disabled = true
+
+            D4_DS_ranking1.disabled = true;
+            D4_PP_ranking1.disabled = true;
+        }
+        function D4_pickedPM_2() {
+            D4_PM_ranking1.disabled = true
+            D4_PM_ranking3.disabled = true
+
+            D4_DS_ranking2.disabled = true;
+            D4_PP_ranking2.disabled = true;
+        }
+        function D4_pickedPM_3() {
+            D4_PM_ranking2.disabled = true
+            D4_PM_ranking1.disabled = true
+
+            D4_DS_ranking3.disabled = true;
+            D4_PP_ranking3.disabled = true;
+        }
+
+        // // **************** D5
+        // var D5_DS_ranking1 = document.getElementById("D5-Data_Safety-ranking-1");
+        // var D5_DS_ranking2 = document.getElementById("D5-Data_Safety-ranking-2");
+        // var D5_DS_ranking3 = document.getElementById("D5-Data_Safety-ranking-3");
+
+        // var D5_PP_ranking1 = document.getElementById("D5-Privacy_Policy-ranking-1");
+        // var D5_PP_ranking2 = document.getElementById("D5-Privacy_Policy-ranking-2");
+        // var D5_PP_ranking3 = document.getElementById("D5-Privacy_Policy-ranking-3");
+
+        // var D5_PM_ranking1 = document.getElementById("D5-Permission_Manifest-ranking-1");
+        // var D5_PM_ranking2 = document.getElementById("D5-Permission_Manifest-ranking-2");
+        // var D5_PM_ranking3 = document.getElementById("D5-Permission_Manifest-ranking-3");
+
+        // document.getElementById("D5-Data_Safety-ranking-1").addEventListener("click", D5_pickedDS_1);
+        // document.getElementById("D5-Data_Safety-ranking-2").addEventListener("click", D5_pickedDS_2);
+        // document.getElementById("D5-Data_Safety-ranking-3").addEventListener("click", D5_pickedDS_3);
+
+        // document.getElementById("D5-Privacy_Policy-ranking-1").addEventListener("click", D5_pickedPP_1);
+        // document.getElementById("D5-Privacy_Policy-ranking-2").addEventListener("click", D5_pickedPP_2);
+        // document.getElementById("D5-Privacy_Policy-ranking-3").addEventListener("click", D5_pickedPP_3);
+
+        // document.getElementById("D5-Permission_Manifest-ranking-1").addEventListener("click", D5_pickedPM_1);
+        // document.getElementById("D5-Permission_Manifest-ranking-2").addEventListener("click", D5_pickedPM_2);
+        // document.getElementById("D5-Permission_Manifest-ranking-3").addEventListener("click", D5_pickedPM_3);
+        
+        // function D5_pickedDS_1() {
+        //     D5_DS_ranking2.disabled = true
+        //     D5_DS_ranking3.disabled = true
+
+        //     D5_PP_ranking1.disabled = true;
+        //     D5_PM_ranking1.disabled = true;
+        // }
+        // function D5_pickedDS_2() {
+        //     D5_DS_ranking1.disabled = true
+        //     D5_DS_ranking3.disabled = true
+
+        //     D5_PP_ranking2.disabled = true;
+        //     D5_PM_ranking2.disabled = true;
+        // }
+        // function D5_pickedDS_3() {
+        //     D5_DS_ranking1.disabled = true
+        //     D5_DS_ranking2.disabled = true
+
+        //     D5_PP_ranking3.disabled = true;
+        //     D5_PM_ranking3.disabled = true;
+        // }
+
+
+        // function D5_pickedPP_1() {
+        //     D5_PP_ranking2.disabled = true
+        //     D5_PP_ranking3.disabled = true
+
+        //     D5_DS_ranking1.disabled = true;
+        //     D5_PM_ranking1.disabled = true;
+        // }
+        // function D5_pickedPP_2() {
+        //     D5_PP_ranking1.disabled = true
+        //     D5_PP_ranking3.disabled = true
+
+        //     D5_DS_ranking2.disabled = true;
+        //     D5_PM_ranking2.disabled = true;
+        // }
+        // function D5_pickedPP_3() {
+        //     D5_PP_ranking1.disabled = true
+        //     D5_PP_ranking2.disabled = true
+
+        //     D5_DS_ranking3.disabled = true;
+        //     D5_PM_ranking3.disabled = true;
+        // }
+
+
+        // function D5_pickedPM_1() {
+        //     D5_PM_ranking2.disabled = true
+        //     D5_PM_ranking3.disabled = true
+
+        //     D5_DS_ranking1.disabled = true;
+        //     D5_PP_ranking1.disabled = true;
+        // }
+        // function D5_pickedPM_2() {
+        //     D5_PM_ranking1.disabled = true
+        //     D5_PM_ranking3.disabled = true
+
+        //     D5_DS_ranking2.disabled = true;
+        //     D5_PP_ranking2.disabled = true;
+        // }
+        // function D5_pickedPM_3() {
+        //     D5_PM_ranking2.disabled = true
+        //     D5_PM_ranking1.disabled = true
+
+        //     D5_DS_ranking3.disabled = true;
+        //     D5_PP_ranking3.disabled = true;
+        // }
+    }
+
+
+
+    function reset(Question){
+
+        var DS_1 = Question + "-Data_Safety-ranking-1";
+        var DS_2 = Question + "-Data_Safety-ranking-2";
+        var DS_3 = Question + "-Data_Safety-ranking-3";
+
+        var PP_1 = Question + "-Privacy_Policy-ranking-1";
+        var PP_2 = Question + "-Privacy_Policy-ranking-2";
+        var PP_3 = Question + "-Privacy_Policy-ranking-3";
+
+        var PM_1 = Question + "-Permission_Manifest-ranking-1";
+        var PM_2 = Question + "-Permission_Manifest-ranking-2";
+        var PM_3 = Question + "-Permission_Manifest-ranking-3";
+
+        document.getElementById(DS_1).disabled = false;
+        document.getElementById(DS_1).checked = false
+
+        document.getElementById(DS_2).disabled = false;
+        document.getElementById(DS_2).checked = false;
+
+        document.getElementById(DS_3).disabled = false;
+        document.getElementById(DS_3).checked = false;
+
+        document.getElementById(PP_1).disabled = false;
+        document.getElementById(PP_1).checked = false;
+
+        document.getElementById(PP_2).disabled = false;
+        document.getElementById(PP_2).checked = false;
+
+        document.getElementById(PP_3).disabled = false;
+        document.getElementById(PP_3).checked = false;
+
+        document.getElementById(PM_1).disabled = false;
+        document.getElementById(PM_1).checked = false;
+
+        document.getElementById(PM_2).disabled = false;
+        document.getElementById(PM_2).checked = false;
+
+        document.getElementById(PM_3).disabled = false;
+        document.getElementById(PM_3).checked = false;
+
+    }
+
+    </script>
+
+		</body>
+</html>

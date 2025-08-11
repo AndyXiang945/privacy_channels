@@ -1,0 +1,140 @@
+<DOCTYPE! html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="../js/pre_study.js"></script>
+      
+
+		<link rel="stylesheet" href="../html/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css" />
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+      <style>
+         p {
+            font-size: 14pt;
+         }
+         * {
+            font-family:  Arial; 
+         }
+      </style>
+
+	<head>
+		<body>
+      
+      <font size="+1">
+
+		<div class="container" style="max-width: 960px; padding: 15px;">
+            <h4 style="text-align: center;">Please answer the following general questions (A.1-A.5) before we assign a mobile app to you for learning about the app's privacy practices.</h4>
+            <h6 style="text-align: center;">*
+               Please DO NOT refresh or close the current page, or go back to the previous page until you have completed the whole study.
+                You will see the "Congratulations..." confirmation page at the end indicating your completion of the study.
+                </h6>
+            <br>
+            <br>
+         
+			<p><b>A.1</b> Based on my experience of using mobile apps, I consider the following types of information privacy-sensitive
+            (Please select all that apply; if no option is applicable, please select “None of above”.):</p>
+            <input type="checkbox" id="A1-Location" value="Location" name="A1">  Location
+            <br>
+            <input type="checkbox" id="A1-Personal" value="Personal info" name="A1"> Personal info (e.g., name, email address, etc.)
+            <br>
+            <input type="checkbox" id="A1-Financial"  value="Financial info" name="A1"> Financial info (e.g., purchase history, payment info, etc.)
+            <br>
+            <input type="checkbox" id="A1-Health" value="Health and fitness info" name="A1"> Health and fitness info
+            <br>
+            <input type="checkbox" id="A1-Messages" value="Messages" name="A1"> Messages (e.g., emails, SMS)
+            <br>
+            <input type="checkbox" id="A1-Photos" value="Photos and videos" name="A1"> Photos and videos
+            <br>
+            <input type="checkbox" id="A1-Audios" value="Audios" name="A1"> Audios
+            <br>
+            <input type="checkbox" id="A1-Files" value="Files" name="A1"> Files and docs stored on the device
+            <br>
+            <input type="checkbox" id="A1-Calendar" value="Calendar" name="A1"> Calendar events 
+            <br>
+            <input type="checkbox" id="A1-Contact" value="Contact list" name="A1"> Contact list
+            <br>
+            <input type="checkbox" id="A1-Activity" value="App activity" name="A1"> App activity (e.g., in-app search history and interaction, etc.)
+            <br>
+            <input type="checkbox" id="A1-Browsing" value="Web browsing history" name="A1"> Web browsing history
+            <br>
+            <input type="checkbox" id="A1-Performance" value="App info and performance" name="A1"> App info and performance (e.g., app crash log)
+            <br>
+            <input type="checkbox" id="A1-Identifiers" value="Device or other identifiers" name="A1"> Device or other identifiers (e.g., phone number, etc.)
+            <br>
+            <input type="checkbox" id="A1-Others" value="Others" name="A1"> Others:
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style = "width: 500px;">
+               <input class="mdl-textfield__input" type="text" id="A1-Specify-Others" name="A1">
+               <label class="mdl-textfield__label" for="A1-Specify-Others">please specify</label>
+           </div>
+            <br>
+            <input type="checkbox" id="A1-None" value="None" name="A1"> None of above
+           <br>
+           <br>
+           <br>
+
+        <p><b>A.2</b> Some of my mobile apps collect, use, and potentially share (with other parties) some types of privacy-sensitive information that I selected above in Question A.1.</p>
+         <input type="radio" id="A2-Strongly-agree" value="1" name="A2">  Strongly agree
+         <br>
+         <input type="radio" id="A2-Somewhat-agree" value="2" name="A2">  Somewhat agree 
+         <br>
+         <input type="radio" id="A2-Neither-agree-nor-disagree" value="3" name="A2"> Neither agree nor disagree
+         <br>
+         <input type="radio" id="A2-Somewhat-disagree" value="4" name="A2"> Somewhat disagree
+         <br>
+         <input type="radio" id="A2-Strongly-disagree" value="5" name="A2"> Strongly disagree
+         <br>
+         <br>
+         <br>
+        
+      <p><b>A.3</b> I or someone I know had an experience of being a victim of some mobile app related privacy violation.</p>
+         <input type="radio" id="A3-Yes" value="Y" name="A3">  Yes 
+         <br>
+         <input type="radio" id="A3-No" value="N" name="A3">  No 
+         <br>
+         <input type="radio" id="A3-Unsure" value="U" name="A3"> Unsure
+         <br>
+         <br>
+         <br> 
+
+      <p><b>A.4</b> It is important for me to know how a mobile app collects, uses, and potentially shares (with other parties) my privacy-sensitive information before deciding to install it. </p>
+         <input type="radio" id="A4-Strongly-agree" value="1" name="A4">  Strongly agree
+         <br>
+         <input type="radio" id="A4-Somewhat-agree" value="2" name="A4">  Somewhat agree 
+         <br>
+         <input type="radio" id="A4-Neither-agree-nor-disagree" value="3" name="A4"> Neither agree nor disagree
+         <br>
+         <input type="radio" id="A4-Somewhat-disagree" value="4" name="A4"> Somewhat disagree
+         <br>
+         <input type="radio" id="A4-Strongly-disagree" value="5" name="A4"> Strongly disagree
+         <br>
+         <br>
+         <br>
+
+      <p><b>A.5</b> In general, I am concerned about the overall privacy risks associated with installing and using mobile apps.</p>
+         <input type="radio" id="A5-Strongly-agree" value="1" name="A5">  Strongly agree
+         <br>
+         <input type="radio" id="A5-Somewhat-agree" value="2" name="A5">  Somewhat agree 
+         <br>
+         <input type="radio" id="A5-Neither-agree-nor-disagree" value="3" name="A5"> Neither agree nor disagree
+         <br>
+         <input type="radio" id="A5-Somewhat-disagree" value="4" name="A5"> Somewhat disagree
+         <br>
+         <input type="radio" id="A5-Strongly-disagree" value="5" name="A5"> Strongly disagree
+	  		<br>
+			<br>
+      
+      <hr style="width:90%; margin: auto;" />
+      <h5 style="text-align: center;">In the next step, you will be assigned a mobile app to learn about the app's privacy practices.</h5>
+      <div class="button-tray">
+         <button onclick="submit()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Next</button>
+      </div>
+		</div>
+
+     </font>
+		</body>
+</html>

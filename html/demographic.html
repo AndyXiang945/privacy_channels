@@ -1,0 +1,120 @@
+
+<DOCTYPE! html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="../js/demographic.js"></script>
+      
+
+		<link rel="stylesheet" href="../html/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css" />
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<style>
+            p {
+                font-size: 14pt;
+            }
+            * {
+            font-family:  Arial;
+            }
+        </style>
+	<head>
+		<body>
+
+		<div class="container" style="max-width: 960px; padding: 15px; font-size: 14pt;">
+            <h4 style="text-align: center;"> 
+                Please answer the following demographic questions (E.1-E.4).</h4>
+            <h6 style="text-align: center;">
+				*Please DO NOT refresh or close the current page, or go back to the previous page until you have completed the whole study.
+				You will see the "Congratulations..." confirmation page at the end indicating your completion of the study.*
+			
+			</h6>
+            <br>
+            <br>
+			
+			<p><b>E.1</b> What is your gender?</p>
+			<input type="radio" id="E1-Female" name="E1" value="Female"> Female
+			<br>
+			<input type="radio" id="E1-Male" name="E1" value="Male"> Male
+			<br>
+			<input type="radio" id="E1-Non-binary" name="E1" value="Non-binary"> Non-binary
+			<br>
+			<input type="radio" id="E1-Other" name="E1" value="Other"> Prefer to self describe:
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				<input class="mdl-textfield__input" type="text" id="E1-Specify-Others">
+				<label class="mdl-textfield__label" for="E1-Specify-Others">Enter text here</label>
+			</div>
+			<br>
+			<input type="radio" id="E1-no-answer" name="E1" value="None"> Prefer not to answer
+			<br>
+			<br>
+            <br>
+
+			<p><b>E.2</b> What is your age group?</p>
+			<input type="radio" id="E2-range-1" name="E2" value="less-18"> Under 18 years old
+			<br>
+			<input type="radio" id="E2-range-2" name="E2" value="18-24"> 18-24 years
+			<br>
+			<input type="radio" id="E2-range-3" name="E2" value="25-39"> 25-39 years
+			<br>
+			<input type="radio" id="E2-range-4" name="E2" value="40-49"> 40-49 years
+			<br>
+			<input type="radio" id="E2-range-5" name="E2" value="50-59"> 50-59 years
+			<br>
+			<input type="radio" id="E2-range-6" name="E2" value="60-more"> 60 years or above
+			<br>
+			<input type="radio" id="E2-no-answer" name="E2" value="None"> Prefer not to answer
+			<br>
+			<br>
+			<br>
+
+			<p><b>E.3</b> What is your highest education level?</p>
+				<input type="radio" id="E3-ed-level-1" name="E3" value="No-high-school"> No high school degree 
+				<br>
+				<input type="radio" id="E3-ed-level-2" name="E3" value="high-school"> High school degree
+				<br>
+				<input type="radio" id="E3-ed-level-3" name="E3" value="Associate"> Associate degree
+				<br>
+				<input type="radio" id="E3-ed-level-4" name="E3" value="Bachelor"> Bachelor's degree
+				<br>
+				<input type="radio" id="E3-ed-level-5" name="E3" value="Master"> Master's degree
+				<br>
+				<input type="radio" id="E3-ed-level-6" name="E3" value="Doctorate"> Doctorate degree
+				<br>
+				<input type="radio" id="E3-ed-level-6" name="E3" value="Medical"> Medical degree
+				<br>
+				<input type="radio" id="E3-Other" name="E3" value="Other"> Other:
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text" id="E3-Specify-Others">
+					<label class="mdl-textfield__label" for="E3-Specify-Others">Please specify</label>
+				</div>
+				<br>
+				<input type="radio" id="E3-no-answer" name="E3" value="None"> Prefer not to answer
+			<br>
+			<br>
+			<br>
+
+			<p><b>E.4</b> What is your occupation?</p>
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				<input class="mdl-textfield__input" type="text" id="E4-open-question">
+				<label class="mdl-textfield__label" for="E4-open-question">Enter text here</label>
+			</div>
+			<br>
+			<br>
+	  
+		<hr style="width:90%; margin: auto;" />
+		<h5> 
+			You now completed the study. 
+			After you click on the "Submit" button, you will be presented with a survey code for you to submit on the Prolific to recieve the compensation.
+		</h5>
+
+      <div class="button-tray">
+         <button onclick="submit()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Submit</button>
+      </div>
+		</div>
+
+		</body>
+</html>
